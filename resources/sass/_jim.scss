@@ -17,7 +17,7 @@
         .top {
             @apply absolute h-full z-40;
             width: 105%;
-            background: brown;
+            background: #8a4300;
             border-radius: 50%;
             transform: rotate(10deg);
             right: -1rem;
@@ -28,7 +28,7 @@
             width: 7rem;
             height: 4rem;
             border-radius: 50%;
-            background: brown;
+            background: #8a4300;
             transform: rotate(-52deg);
             left: -2rem;
             top: 1.3rem;
@@ -38,7 +38,7 @@
             @apply absolute right-0 rounded-full z-40;
             width: 1.65rem;
             height: 9rem;
-            background: brown;
+            background: #8a4300;
             top: 52%;
             right: -5%;
             transform: rotate(3deg);
@@ -48,7 +48,7 @@
             @apply absolute right-0 rounded-full z-40;
             width: 1.65rem;
             height: 9rem;
-            background: brown;
+            background: #8a4300;
             top: 52%;
             left: -5%;
             transform: rotate(-3deg);
@@ -172,6 +172,30 @@
         }
     }
 
+    .mouth {
+        @apply block absolute z-50;
+        bottom: 19%;
+        width: 42%;
+        height: 1rem;
+        // background: black;
+        left: calc(30%);
 
+        .lip {
+            @apply block w-full absolute;
+            background: red;
+
+            &.top {
+                @apply top-0 z-30;
+                height: 1rem;
+                border-radius:50%;
+            }
+            &.bottom {
+                @apply z-40;
+                height: 1rem;
+                top: 0.5rem;
+                border-radius:50%;
+            }
+        }
+    }
 
 }

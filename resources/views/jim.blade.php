@@ -25,6 +25,10 @@
     <div class="nose">
     </div>
 
+    <div class="mouth">
+        <div class="lip top"></div>
+        <div class="lip bottom"></div>
+    </div>
     <div class="chin"></div>
 
 </div>

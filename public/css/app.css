@@ -17977,7 +17977,7 @@ h5 {
   height: 100%;
   z-index: 40;
   width: 105%;
-  background: brown;
+  background: #8a4300;
   border-radius: 50%;
   transform: rotate(10deg);
   right: -1rem;
@@ -17989,7 +17989,7 @@ h5 {
   width: 7rem;
   height: 4rem;
   border-radius: 50%;
-  background: brown;
+  background: #8a4300;
   transform: rotate(-52deg);
   left: -2rem;
   top: 1.3rem;
@@ -18002,7 +18002,7 @@ h5 {
   z-index: 40;
   width: 1.65rem;
   height: 9rem;
-  background: brown;
+  background: #8a4300;
   top: 52%;
   right: -5%;
   transform: rotate(3deg);
@@ -18015,7 +18015,7 @@ h5 {
   z-index: 40;
   width: 1.65rem;
   height: 9rem;
-  background: brown;
+  background: #8a4300;
   top: 52%;
   left: -5%;
   transform: rotate(-3deg);
@@ -18155,6 +18155,37 @@ h5 {
   border-width: 2rem 2rem 0 2rem;
   border-color: #E8B6A3 transparent transparent transparent;
   top: 100%;
+}
+
+.jim .mouth {
+  display: block;
+  position: absolute;
+  z-index: 50;
+  bottom: 19%;
+  width: 42%;
+  height: 1rem;
+  left: calc(30%);
+}
+
+.jim .mouth .lip {
+  display: block;
+  width: 100%;
+  position: absolute;
+  background: red;
+}
+
+.jim .mouth .lip.top {
+  top: 0;
+  z-index: 30;
+  height: 1rem;
+  border-radius: 50%;
+}
+
+.jim .mouth .lip.bottom {
+  z-index: 40;
+  height: 1rem;
+  top: 0.5rem;
+  border-radius: 50%;
 }
 
 @media (min-width: 640px){
