@@ -18158,34 +18158,72 @@ h5 {
 }
 
 .jim .mouth {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
   position: absolute;
   z-index: 50;
-  bottom: 19%;
+  top: 76%;
   width: 42%;
-  height: 1rem;
   left: calc(30%);
+}
+
+.jim .mouth:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 105%;
+  top: 0.5rem;
+  top: -0.1rem;
+  height: 1rem;
+  z-index: 70;
+  border-radius: 50%;
+  left: -2%;
+  border-bottom: 3px solid #ce8282;
 }
 
 .jim .mouth .lip {
   display: block;
   width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.jim .mouth .lip:after {
+  content: "";
+  display: block;
   position: absolute;
-  background: red;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
 
 .jim .mouth .lip.top {
   top: 0;
-  z-index: 30;
-  height: 1rem;
-  border-radius: 50%;
+  z-index: 60;
+  height: 0.5rem;
+  width: 94%;
+  left: 4%;
+  border-radius: 10%;
+  overflow: visible;
+}
+
+.jim .mouth .lip.top:after {
+  background: #f3a9a9;
+  top: 0.25rem;
 }
 
 .jim .mouth .lip.bottom {
   z-index: 40;
-  height: 1rem;
-  top: 0.5rem;
-  border-radius: 50%;
+  height: 2rem;
+  border-radius: 15%;
+  margin-top: -1%;
+}
+
+.jim .mouth .lip.bottom:after {
+  top: -0.9rem;
+  background: #f39090;
 }
 
 @media (min-width: 640px){

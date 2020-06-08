@@ -173,27 +173,56 @@
     }
 
     .mouth {
-        @apply block absolute z-50;
-        bottom: 19%;
+        @apply flex flex-col justify-start items-stretch absolute z-50;
+        top: 76%;
         width: 42%;
-        height: 1rem;
         // background: black;
         left: calc(30%);
 
+        &:after {
+            content: '';
+            @apply block absolute;
+            width: 105%;
+            top: 0.5rem;
+            top: -0.1rem;
+            height: 1rem;
+            z-index: 70;
+            border-radius: 50%;
+            left: -2%;
+            border-bottom: 3px solid #ce8282;
+        }
+
         .lip {
-            @apply block w-full absolute;
-            background: red;
+            @apply block w-full relative overflow-hidden;
+            &:after {
+                content: '';
+                @apply block absolute w-full h-full;
+
+                border-radius: 50%;
+            }
 
             &.top {
-                @apply top-0 z-30;
-                height: 1rem;
-                border-radius:50%;
+                top: 0;
+                z-index: 60;
+                height: .5rem;
+                width: 94%;
+                left: 4%;
+                border-radius: 10%;
+                overflow: visible;
+                &:after {
+                    background: #f3a9a9;
+                    top: 0.25rem;
+                }
             }
             &.bottom {
                 @apply z-40;
-                height: 1rem;
-                top: 0.5rem;
-                border-radius:50%;
+                height: 2rem;
+                border-radius: 15%;
+                margin-top: -1%;
+                &:after {
+                    top: -0.9rem;
+                    background: #f39090;
+                }
             }
         }
     }
