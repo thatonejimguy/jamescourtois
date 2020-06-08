@@ -21,9 +21,12 @@
         }
         .right {
             @apply absolute right-0 rounded-full;
-            width: 5rem;
-            height:10rem;
+            width: 1.65rem;
+            height: 9rem;
             background: brown;
+            top: 52%;
+            right: -5%;
+            transform: rotate(3deg);
         }
     }
 
