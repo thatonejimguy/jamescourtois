@@ -17967,25 +17967,39 @@ h5 {
 .jim .hair {
   position: absolute;
   width: 100%;
-  z-index: 50;
+  z-index: 40;
   top: -1rem;
   height: 28%;
 }
 
 .jim .hair .top {
   position: absolute;
-  border-radius: 9999px;
-  width: 100%;
   height: 100%;
+  z-index: 40;
+  width: 105%;
   background: brown;
+  border-radius: 50%;
   transform: rotate(10deg);
   right: -1rem;
+}
+
+.jim .hair .top-left {
+  position: absolute;
+  z-index: 40;
+  width: 7rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: brown;
+  transform: rotate(-52deg);
+  left: -2rem;
+  top: 1.3rem;
 }
 
 .jim .hair .right {
   position: absolute;
   right: 0;
   border-radius: 9999px;
+  z-index: 40;
   width: 1.65rem;
   height: 9rem;
   background: brown;
@@ -17994,7 +18008,22 @@ h5 {
   transform: rotate(3deg);
 }
 
+.jim .hair .left {
+  position: absolute;
+  right: 0;
+  border-radius: 9999px;
+  z-index: 40;
+  width: 1.65rem;
+  height: 9rem;
+  background: brown;
+  top: 52%;
+  left: -5%;
+  transform: rotate(-3deg);
+}
+
 .jim .ear {
+  position: absolute;
+  z-index: 50;
   background: #FDD7C5;
   width: 1.5rem;
   height: 5rem;
@@ -18044,7 +18073,7 @@ h5 {
   height: 1.65rem;
   border-radius: 100%/75%;
   background: #fff;
-  top: 38%;
+  top: 40%;
   border-bottom: 1px solid #fbbc95;
   border-top: 1px solid #fbbc95;
 }
@@ -18100,7 +18129,7 @@ h5 {
 
 .jim .nose {
   position: absolute;
-  top: 37%;
+  top: 39%;
   left: 36%;
   width: 3rem;
   height: 6rem;

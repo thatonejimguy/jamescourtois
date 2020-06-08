@@ -2,6 +2,8 @@
 
     <div class="hair">
         <div class="top"></div>
+        <div class="top-left"></div>
+        <div class="left"></div>
         <div class="right"></div>
     </div>
     <div class="head"></div>
