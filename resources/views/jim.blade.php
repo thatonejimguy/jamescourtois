@@ -1,7 +1,7 @@
 <div class="jim">
 
     <div class="hair">
-        <div class="top"><span></span></div>
+        <div class="top"><span class="fill"></span></div>
         <div class="curl"></div>
         <div class="skin"></div>
         <div class="left"></div>
