@@ -18206,10 +18206,46 @@ h5 {
   justify-content: flex-start;
   align-items: stretch;
   position: absolute;
+  overflow: hidden;
   z-index: 50;
   top: 78%;
-  width: 42%;
-  left: calc(29%);
+  width: 38%;
+  height: 10%;
+  left: 31%;
+  border-top: 8px solid #c46f69;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.jim .mouth .mouth-inner {
+  display: block;
+  overflow: hidden;
+  right: 0;
+  left: 0;
+  border-radius: 9999px;
+  position: absolute;
+  width: 100%;
+  --bg-opacity: 1;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, var(--bg-opacity));
+  height: 185%;
+  top: -100%;
+  border-bottom: 15px solid #dd7e77;
+}
+
+.jim .mouth .teeth {
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 100%;
+  --bg-opacity: 1;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, var(--bg-opacity));
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  height: 1rem;
+  border-radius: 50%;
+  top: 51%;
 }
 
 @media (min-width: 640px){

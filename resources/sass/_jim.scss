@@ -205,13 +205,27 @@
     }
 
     .mouth {
-        @apply flex flex-col justify-start items-stretch absolute z-50;
+        @apply flex flex-col justify-start items-stretch absolute overflow-hidden z-50;
         top: 78%;
-        width: 42%;
-        // background: black;
-        left: calc(29%);
+        width: 38%;
+        height: 10%;
+        left: 31%;
+        border-top: 8px solid #c46f69;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
 
-
+        .mouth-inner {
+            @apply block overflow-hidden right-0 left-0 rounded-full absolute w-full bg-white ;
+            height: 185%;
+            top: -100%;
+            border-bottom: 15px solid #dd7e77;
+        }
+        .teeth {
+            @apply block absolute right-0 left-0 w-full bg-white shadow-md;
+            height:1rem;
+            border-radius:50%;
+            top: 51%;
+        }
     }
 
 }

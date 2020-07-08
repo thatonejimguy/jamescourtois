@@ -29,7 +29,9 @@
     </div>
 
     <div class="mouth">
-
+        <div class="mouth-inner">
+            <div class="teeth"></div>
+        </div>
     </div>
     <div class="chin"></div>
 
