@@ -15,43 +15,57 @@
 
 
         .top {
-            @apply absolute h-full z-40;
-            width: 105%;
-            background: #8a4300;
-            border-radius: 50%;
-            transform: rotate(10deg);
-            right: -1rem;
+            @apply absolute h-full z-40 w-full overflow-hidden;
+            width: 110%;
+            left: -5%;
+
+            span {
+                @apply block absolute h-full w-full;
+                background: #704c2f;
+                height: 200%;
+                border-radius: 25%;
+            }
         }
 
-        .top-left {
-            @apply absolute z-40;
-            width: 7rem;
-            height: 4rem;
-            border-radius: 50%;
-            background: #8a4300;
-            transform: rotate(-52deg);
-            left: -2rem;
-            top: 1.3rem;
-        }
 
         .right {
             @apply absolute right-0 rounded-full z-40;
             width: 1.65rem;
             height: 9rem;
-            background: #8a4300;
+            background: #704c2f;
             top: 52%;
             right: -5%;
-            transform: rotate(3deg);
+
         }
 
         .left {
             @apply absolute right-0 rounded-full z-40;
             width: 1.65rem;
             height: 9rem;
-            background: #8a4300;
+            background: #704c2f;
             top: 52%;
             left: -5%;
-            transform: rotate(-3deg);
+
+        }
+
+        .skin {
+            @apply absolute block rounded-full z-50;
+            background: #FDD7C5;
+            width: 44%;
+            height: 43%;
+            top: 79%;
+            left: 6%;
+            border-top: 3px solid black;
+        }
+
+        .curl {
+            @apply absolute block rounded-full z-50;
+            background: #704c2f;
+            width: 50%;
+            height: 57%;
+            top: 67%;
+            left: 50%;
+            border-bottom: 2px solid black;
         }
 
     }
@@ -97,7 +111,7 @@
     .eye {
         @apply z-50 absolute block overflow-hidden;
         width: 3.5rem;
-        height: 1.65rem;
+        height: 1.7rem;
         border-radius: 100% / 75%;
         background: #fff;
         top: 40%;
@@ -109,6 +123,24 @@
         }
 
         &.right {
+            left: calc(50% + 1.75rem);
+        }
+    }
+
+    .eyebrow {
+        @apply absolute block overflow-hidden z-50;
+        height: 1rem;
+        width: 3.5rem;
+        top: 33%;
+        border-top: 12px solid #704c2f;
+        border-radius: 29%;
+        &.left {
+            transform: skew(15deg)rotate(1deg);
+            left: calc(50% - 5.25rem);
+        }
+
+        &.right {
+            transform: skew(-15deg)rotate(-1deg);
             left: calc(50% + 1.75rem);
         }
     }
@@ -147,7 +179,7 @@
         top: 39%;
         left: 36%;
         width: 3rem;
-        height: 6rem;
+        height: 5.5rem;
         z-index: 50;
 
         &:before {
@@ -174,57 +206,12 @@
 
     .mouth {
         @apply flex flex-col justify-start items-stretch absolute z-50;
-        top: 76%;
+        top: 78%;
         width: 42%;
         // background: black;
-        left: calc(30%);
+        left: calc(29%);
 
-        &:after {
-            content: '';
-            @apply block absolute;
-            width: 105%;
-            top: 0.5rem;
-            top: -0.1rem;
-            height: 1rem;
-            z-index: 70;
-            border-radius: 50%;
-            left: -2%;
-            border-bottom: 3px solid #ce8282;
-        }
 
-        .lip {
-            @apply block w-full relative overflow-hidden;
-            &:after {
-                content: '';
-                @apply block absolute w-full h-full;
-
-                border-radius: 50%;
-            }
-
-            &.top {
-                top: 0;
-                z-index: 60;
-                height: .5rem;
-                width: 94%;
-                left: 4%;
-                border-radius: 10%;
-                overflow: visible;
-                &:after {
-                    background: #f3a9a9;
-                    top: 0.25rem;
-                }
-            }
-            &.bottom {
-                @apply z-40;
-                height: 2rem;
-                border-radius: 15%;
-                margin-top: -1%;
-                &:after {
-                    top: -0.9rem;
-                    background: #f39090;
-                }
-            }
-        }
     }
 
 }
