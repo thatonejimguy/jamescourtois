@@ -1,4 +1,4 @@
-<div class="jim">
+<div class="jim {{$class ?? ''}}">
 
     <div class="hair">
         <div class="top"><span class="fill"></span></div>
@@ -33,6 +33,5 @@
             <div class="teeth"></div>
         </div>
     </div>
-    <div class="chin"></div>
 
 </div>

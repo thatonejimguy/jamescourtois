@@ -1,7 +1,7 @@
 .jim {
     position: relative;
     width: 15rem;
-    height: 24rem;
+    height: 22rem;
     margin: 0 auto;
     display: flex;
     flex-flow: column;
@@ -99,15 +99,6 @@
         z-index: 10;
     }
 
-    .chin {
-        @apply absolute left-0 right-0 bottom-0 w-full z-10;
-        width:90%;
-        left:5%;
-        height: 50%;
-        background-color: #FDD7C5;
-        border-bottom-left-radius: 42%;
-        border-bottom-right-radius: 42%;
-    }
 
     .eye {
         @apply z-50 absolute block overflow-hidden;
@@ -130,10 +121,10 @@
 
     .eyebrow {
         @apply absolute block overflow-hidden z-50;
-        height: 1rem;
+        height: 0.75rem;
         width: 3.5rem;
         top: 33%;
-        border-top: 12px solid #704c2f;
+        background: #704c2f;
         border-radius: 29%;
         &.left {
             transform: skew(15deg)rotate(1deg);
@@ -177,10 +168,9 @@
 
     .nose {
         position: absolute;
-        top: 39%;
+        top: 37%;
         left: 36%;
-        width: 3rem;
-        height: 5.5rem;
+        height: 25%;
         z-index: 50;
 
         &:before {
@@ -189,7 +179,7 @@
             width: 0;
             height: 0;
             border-style: solid;
-            border-width: 0 0 6rem 2rem;
+            border-width: 0 0 5.5rem 2rem;
             border-color: transparent transparent #FAC3AF transparent;
         }
 
@@ -207,7 +197,7 @@
 
     .mouth {
         @apply flex flex-col justify-start items-stretch absolute overflow-hidden z-50;
-        top: 76%;
+        top: 75%;
         width: 40%;
         height: 10.5%;
         left: 30%;
@@ -225,8 +215,8 @@
             @apply block absolute right-0 left-0 w-full bg-white;
             box-shadow: 0px 2px 3px rgba(0,0,0,0.25);
             height:1rem;
-            border-radius:50%;
-            top: 51%;
+            border-radius:40%;
+            top: 47%;
         }
     }
 

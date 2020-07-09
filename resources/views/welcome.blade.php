@@ -27,7 +27,10 @@
             {{date('l F jS Y h:i:s a') }}
         </p>
 
-        @include('jim')
+        <div class="flex">
+            @include('jim')
+            @include('jim')
+        </div>
 
     </div>
 
