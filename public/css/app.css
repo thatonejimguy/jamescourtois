@@ -17968,17 +17968,16 @@ h5 {
   position: absolute;
   width: 100%;
   z-index: 40;
-  top: -1rem;
+  top: -5%;
   height: 28%;
 }
 
 .jim .hair .top {
   position: absolute;
-  height: 100%;
   z-index: 40;
-  width: 100%;
   overflow: hidden;
   width: 110%;
+  height: 96%;
   left: -5%;
 }
 
@@ -17997,8 +17996,8 @@ h5 {
   right: 0;
   border-radius: 9999px;
   z-index: 40;
-  width: 1.65rem;
-  height: 9rem;
+  width: 11%;
+  height: 145%;
   background: #704c2f;
   top: 52%;
   right: -5%;
@@ -18009,8 +18008,8 @@ h5 {
   right: 0;
   border-radius: 9999px;
   z-index: 40;
-  width: 1.65rem;
-  height: 9rem;
+  width: 11%;
+  height: 145%;
   background: #704c2f;
   top: 52%;
   left: -5%;
@@ -18023,8 +18022,8 @@ h5 {
   z-index: 50;
   background: #FDD7C5;
   width: 44%;
-  height: 43%;
-  top: 79%;
+  height: 72%;
+  top: 66%;
   left: 6%;
   border-top: 3px solid #402815;
 }
@@ -18036,7 +18035,7 @@ h5 {
   z-index: 50;
   background: #704c2f;
   width: 50%;
-  height: 57%;
+  height: 51%;
   top: 67%;
   left: 50%;
   border-bottom: 2px solid #402815;
@@ -18046,29 +18045,29 @@ h5 {
   position: absolute;
   z-index: 50;
   background: #FDD7C5;
-  width: 1.5rem;
-  height: 5rem;
+  width: 10%;
+  height: 23%;
   border-radius: 25%;
   position: absolute;
   top: 40%;
 }
 
 .jim .ear.left {
-  left: -1.35rem;
+  left: -9%;
   transform: rotate(-5deg);
 }
 
 .jim .ear.right {
-  right: -1.35rem;
+  right: -9%;
   transform: rotate(5deg);
 }
 
 .jim .head {
-  width: 15rem;
-  height: 24rem;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
   border-radius: 37%;
   background: #FDD7C5;
-  z-index: 10;
 }
 
 .jim .eye {
@@ -18076,21 +18075,21 @@ h5 {
   position: absolute;
   display: block;
   overflow: hidden;
-  width: 3.5rem;
-  height: 1.7rem;
+  width: 23%;
+  height: 8%;
   border-radius: 100%/75%;
   background: #fff;
   top: 40%;
   border-bottom: 1px solid #fbbc95;
-  border-top: 1px solid #fbbc95;
+  border-top: 4px solid #eac1a8;
 }
 
 .jim .eye.left {
-  left: calc(50% - 5.25rem);
+  left: 15%;
 }
 
 .jim .eye.right {
-  left: calc(50% + 1.75rem);
+  left: 63%;
 }
 
 .jim .eyebrow {
@@ -18098,8 +18097,8 @@ h5 {
   display: block;
   overflow: hidden;
   z-index: 50;
-  height: 0.75rem;
-  width: 3.5rem;
+  height: 3%;
+  width: 24%;
   top: 33%;
   background: #704c2f;
   border-radius: 29%;
@@ -18107,12 +18106,12 @@ h5 {
 
 .jim .eyebrow.left {
   transform: skew(15deg) rotate(1deg);
-  left: calc(50% - 5.25rem);
+  left: 15%;
 }
 
 .jim .eyebrow.right {
   transform: skew(-15deg) rotate(-1deg);
-  left: calc(50% + 1.75rem);
+  left: 63%;
 }
 
 .jim .iris {
@@ -18124,10 +18123,10 @@ h5 {
   z-index: 30;
   background: #3b639d;
   background: linear-gradient(0deg, #3b639d 50%, #35b7dd 100%);
-  width: 1.75rem;
-  height: 1.75rem;
-  top: calc(50% - 0.85rem);
-  left: calc(50% - 0.825rem);
+  width: 47%;
+  height: 112%;
+  top: -6%;
+  left: 27%;
 }
 
 .jim .pupil {
@@ -18137,11 +18136,11 @@ h5 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 1rem;
-  height: 1rem;
+  width: 20%;
+  height: 50%;
   background: #000;
-  top: calc(50% - 0.5rem);
-  left: calc(50% - 0.45rem);
+  top: 25%;
+  left: 42%;
 }
 
 .jim .pupil:after {
@@ -18149,40 +18148,72 @@ h5 {
   display: block;
   position: absolute;
   border-radius: 9999px;
-  width: 0.5rem;
-  height: 0.5rem;
+  width: 50%;
+  height: 50%;
   background: rgba(255, 255, 255, 0.85);
-  top: -0.1rem;
-  left: -0.1rem;
+  top: -1%;
+  left: -1%;
 }
 
 .jim .nose {
   position: absolute;
-  top: 37%;
-  left: 36%;
-  height: 25%;
+  top: 38%;
+  left: 42%;
+  height: 28%;
+  width: 16%;
   z-index: 50;
 }
 
-.jim .nose:before {
-  content: "";
+.jim .nostrils {
+  display: block;
   position: absolute;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 0 5.5rem 2rem;
-  border-color: transparent transparent #F4C7B7 transparent;
+  bottom: 0;
+  width: 100%;
+  height: 40%;
+  bottom: -10%;
+  width: 124%;
+  left: -11%;
+  background: #F2BEA5;
+  background: radial-gradient(circle, #f2bea5 0%, #f2bea5 37%, #c99379 100%);
+  border-radius: 50%;
 }
 
-.jim .nose:after {
-  content: "";
+.jim .nostrils > span {
+  display: block;
   position: absolute;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 2rem 2rem 0 2rem;
-  border-color: #E3BAAB transparent transparent transparent;
-  top: 100%;
+  height: 100%;
+  width: 25%;
+  height: 120%;
+  top: -8%;
+  background: #FDD7C5;
+}
+
+.jim .nostrils span.left {
+  left: -19%;
+  transform: rotate(6deg);
+}
+
+.jim .nostrils span.right {
+  right: -19%;
+  transform: rotate(-6deg);
+}
+
+.jim .bridge {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 40;
+  border-bottom-right-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+  border-left: 2px solid #F2BEA5;
+  background: #fccdb8;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #FDD7C5 0%, #fccdb8 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#fccdb8", endColorstr="#e0b4a6",GradientType=0 );
+  /* IE6-9 */
 }
 
 .jim .mouth {
@@ -18228,7 +18259,7 @@ h5 {
   background-color: #fff;
   background-color: rgba(255, 255, 255, var(--bg-opacity));
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
-  height: 1rem;
+  height: 42%;
   border-radius: 40%;
   top: 47%;
 }

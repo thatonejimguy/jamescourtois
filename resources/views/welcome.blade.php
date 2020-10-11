@@ -29,7 +29,6 @@
 
         <div class="flex">
             @include('jim')
-            @include('jim')
         </div>
 
     </div>
