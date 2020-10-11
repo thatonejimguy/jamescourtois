@@ -24,7 +24,7 @@
                 @apply block absolute h-full w-full;
                 background: #704c2f;
                 height: 200%;
-                border-radius: 30%;
+                border-radius: 40%;
             }
         }
 
@@ -32,9 +32,9 @@
         .right {
             @apply absolute right-0 rounded-full z-40;
             width: 11%;
-            height: 145%;
+            height: 124%;
             background: #704c2f;
-            top: 52%;
+            top: 78%;
             right: -5%;
 
         }
@@ -42,9 +42,9 @@
         .left {
             @apply absolute right-0 rounded-full z-40;
             width: 11%;
-            height: 145%;
+            height: 124%;
             background: #704c2f;
-            top: 52%;
+            top: 78%;
             left: -5%;
         }
 
@@ -198,10 +198,10 @@
         @apply block absolute bottom-0 w-full;
         height:40%;
         bottom: -10%;
-        width:124%;
-        left:-11%;
+        width: 149%;
+        left: -23%;
         background: #F2BEA5;
-        background: radial-gradient(circle, #f2bea5 0%, #f2bea5 37%, #c99379 100%);
+        background: radial-gradient(ellipse, #f2bea5 0%, #f2bea5 57%, #c99379 100%);
 
         border-radius:50%;
         >span {
