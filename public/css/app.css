@@ -17955,8 +17955,8 @@ h5 {
 
 .jim {
   position: relative;
-  width: 15rem;
-  height: 22rem;
+  width: 236px;
+  height: 352px;
   margin: 0 auto;
   display: flex;
   flex-flow: column;
@@ -18025,20 +18025,20 @@ h5 {
   height: 72%;
   top: 66%;
   left: 6%;
-  border-top: 3px solid #402815;
+  border-top: 3px solid #48311f;
 }
 
 .jim .hair .curl {
   position: absolute;
   display: block;
-  border-radius: 9999px;
   z-index: 50;
   background: #704c2f;
+  border-radius: 43%;
   width: 50%;
   height: 51%;
   top: 67%;
   left: 50%;
-  border-bottom: 2px solid #402815;
+  border-bottom: 3px solid #48311f;
 }
 
 .jim .ear {
