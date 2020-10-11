@@ -1,0 +1,272 @@
+.jim {
+    position: relative;
+    width: 236px;
+    height: 352px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    align-items: stretch;
+    justify-content: flex-start;
+
+    .hair {
+        @apply absolute w-full z-40;
+        top: -5%;
+        height: 28%;
+
+
+        .top {
+            @apply absolute z-40 overflow-hidden;
+            width: 110%;
+            height: 96%;
+            left: -5%;
+
+            .fill {
+                @apply block absolute h-full w-full;
+                background: #704c2f;
+                height: 200%;
+                border-radius: 40%;
+            }
+        }
+
+
+        .right {
+            @apply absolute right-0 rounded-full z-40;
+            width: 11%;
+            height: 124%;
+            background: #704c2f;
+            top: 78%;
+            right: -5%;
+
+        }
+
+        .left {
+            @apply absolute right-0 rounded-full z-40;
+            width: 11%;
+            height: 124%;
+            background: #704c2f;
+            top: 78%;
+            left: -5%;
+        }
+
+        .skin {
+            @apply absolute block rounded-full z-50;
+            background: #FDD7C5;
+            width: 44%;
+            height:72%;
+            top: 64%;
+            left: 50%;            
+        }
+
+        .curl {
+            @apply absolute block z-50;
+            width: 49%;
+            height: 51%;
+            top: 66%;
+            left: 1%;
+            
+            &:before {
+                content: '';
+                @apply block absolute w-full h-full rounded-full bottom-0 z-10;
+                background: #704c2f;
+                right: -1px;
+                
+            }
+            
+            &:after {
+                content:'';
+                @apply block absolute w-full rounded-full h-full z-0;  
+                background: #56402f; 
+                bottom: -2px;       
+                
+            }
+        }
+
+    }
+
+    .ear {
+        @apply absolute z-50;
+        background: #FDD7C5;
+        width: 10%;
+        height: 23%;
+        border-radius: 25%;
+        position: absolute;
+        top: 40%;
+
+
+        &.left {
+            left: -9%;
+            transform: rotate(-5deg);
+        }
+
+        &.right {
+            right: -9%;
+            transform: rotate(5deg);
+        }
+    }
+
+    .head {
+        @apply w-full h-full z-10;
+        border-radius: 37%;
+        background: #FDD7C5;
+    }
+
+
+    .eye {
+        @apply z-50 absolute block overflow-hidden;
+        width: 23%;
+        height: 8%;
+        border-radius: 100% / 75%;
+        background: #fff;
+        top: 40%;
+        border-bottom: 1px solid #fbbc95;
+        border-top: 4px solid #eac1a8;
+        animation: blink 8s ease-out 4s infinite;
+
+        @keyframes blink{
+            0% {
+                height: 8%;
+                top: 40%;
+            }
+            2%{
+                height: 0%;
+                top: 45%;
+            }
+            4%{
+                height: 8%;
+                top: 40%;
+            }
+            100%{
+                height: 8%;
+                top: 40%;
+            }
+        }
+
+        &.left {
+            left: 15%;
+        }
+
+        &.right {
+            left: 63%;
+        }
+    }
+
+    .eyebrow {
+        @apply absolute block overflow-hidden z-50;
+        height: 3%;
+        width: 24%;
+        top: 33%;
+        background: #704c2f;
+        border-radius: 29%;
+        &.left {
+            transform: skew(15deg)rotate(1deg);
+            left: 15%;
+        }
+
+        &.right {
+            transform: skew(-15deg)rotate(-1deg);
+            left: 63%;
+        }
+    }
+
+    .iris {
+        @apply block absolute rounded-full mx-auto z-30;
+        background: rgb(59, 99, 157);
+        background: linear-gradient(0deg, rgba(59, 99, 157, 1) 50%, rgba(53, 183, 221, 1) 100%);
+        width: 47%;
+        height: 112%;
+        top: -6%;
+        left: 27%;
+    }
+
+    .pupil {
+        @apply absolute rounded-full z-50 block mx-auto;
+        width: 20%;
+        height: 50%;
+        background: #000;
+        top: 25%;
+        left: 41%;
+
+        &:after {
+            content: '';
+            @apply block absolute rounded-full;
+            width: 50%;
+            height: 50%;
+            background: rgba(255, 255, 255, 0.85);
+            top: -1%;
+            left: -1%;
+        }
+    }
+
+    .nose {
+        position: absolute;
+        top: 38%;
+        left: 42%;
+        height: 28%;
+        width: 16%;
+        z-index: 50;
+    }
+
+    .nostrils {
+        @apply block absolute bottom-0 w-full;
+        height:40%;
+        bottom: -10%;
+        width: 149%;
+        left: -23%;
+        background: #F2BEA5;
+        background: radial-gradient(ellipse, #f2bea5 0%, #f2bea5 57%, #c99379 100%);
+
+        border-radius:50%;
+        >span {
+            @apply block absolute h-full;
+            width: 25%;
+            height:120%;
+            top:-8%;
+            background: #FDD7C5;
+        }
+        span.left {
+            left: -19%; 
+            transform: rotate(6deg);
+        }
+        span.right {
+            right: -19%;
+            transform: rotate(-6deg);
+        }
+    }
+
+    .bridge {
+        @apply absolute w-full h-full z-40 rounded-br-full rounded-bl-full;
+        border-left: 2px solid #F2BEA5;
+        // border-radius:25%;
+        background: #fccdb8; /* Old browsers */
+        background: -moz-linear-gradient(top,  #FDD7C5 0%, #fccdb8 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  #FDD7C5 0%,#fccdb8 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  #FDD7C5 0%,#fccdb8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fccdb8', endColorstr='#e0b4a6',GradientType=0 ); /* IE6-9 */
+    }
+
+    .mouth {
+        @apply flex flex-col justify-start items-stretch absolute overflow-hidden z-50;
+        top: 75%;
+        width: 40%;
+        height: 10.5%;
+        left: 30%;
+        border-top: 8px solid #c46f69;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+
+        .mouth-inner {
+            @apply block overflow-hidden right-0 left-0 rounded-full absolute w-full bg-white ;
+            height: 185%;
+            top: -100%;
+            border-bottom: 15px solid #dd7e77;
+        }
+        .teeth {
+            @apply block absolute right-0 left-0 w-full bg-white;
+            box-shadow: 0px 2px 3px rgba(0,0,0,0.25);
+            height:42%;
+            border-radius:40%;
+            top: 47%;
+        }
+    }
+
+}
