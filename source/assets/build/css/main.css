@@ -1113,7 +1113,7 @@ pre code {
   z-index: 50;
   width: 49%;
   height: 51%;
-  top: 66%;
+  top: 63%;
   left: 1%;
 }
 
@@ -1140,6 +1140,7 @@ pre code {
   z-index: 0;
   background: #56402f;
   bottom: -2px;
+  right: -1px;
 }
 
 .jim .ear {
@@ -1359,7 +1360,7 @@ pre code {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #FDD7C5 0%, #fccdb8 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#fccdb8", endColorstr="#e0b4a6",GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fccdb8", endColorstr="#e0b4a6", GradientType=0);
   /* IE6-9 */
 }
 

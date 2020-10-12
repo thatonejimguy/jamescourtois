@@ -52,32 +52,32 @@
             @apply absolute block rounded-full z-50;
             background: #FDD7C5;
             width: 44%;
-            height:72%;
+            height: 72%;
             top: 64%;
-            left: 50%;            
+            left: 50%;
         }
 
         .curl {
             @apply absolute block z-50;
             width: 49%;
             height: 51%;
-            top: 66%;
+            top: 63%;
             left: 1%;
-            
+
             &:before {
                 content: '';
                 @apply block absolute w-full h-full rounded-full bottom-0 z-10;
                 background: #704c2f;
                 right: -1px;
-                
+
             }
-            
+
             &:after {
-                content:'';
-                @apply block absolute w-full rounded-full h-full z-0;  
-                background: #56402f; 
-                bottom: -2px;       
-                
+                content: '';
+                @apply block absolute w-full rounded-full h-full z-0;
+                background: #56402f;
+                bottom: -2px;
+                right:-1px;
             }
         }
 
@@ -122,20 +122,23 @@
         border-top: 4px solid #eac1a8;
         animation: blink 8s ease-out 4s infinite;
 
-        @keyframes blink{
+        @keyframes blink {
             0% {
                 height: 8%;
                 top: 40%;
             }
-            2%{
+
+            2% {
                 height: 0%;
                 top: 45%;
             }
-            4%{
+
+            4% {
                 height: 8%;
                 top: 40%;
             }
-            100%{
+
+            100% {
                 height: 8%;
                 top: 40%;
             }
@@ -157,6 +160,7 @@
         top: 33%;
         background: #704c2f;
         border-radius: 29%;
+
         &.left {
             transform: skew(15deg)rotate(1deg);
             left: 15%;
@@ -208,25 +212,28 @@
 
     .nostrils {
         @apply block absolute bottom-0 w-full;
-        height:40%;
+        height: 40%;
         bottom: -10%;
         width: 149%;
         left: -23%;
         background: #F2BEA5;
         background: radial-gradient(ellipse, #f2bea5 0%, #f2bea5 57%, #c99379 100%);
 
-        border-radius:50%;
+        border-radius: 50%;
+
         >span {
             @apply block absolute h-full;
             width: 25%;
-            height:120%;
-            top:-8%;
+            height: 120%;
+            top: -8%;
             background: #FDD7C5;
         }
+
         span.left {
-            left: -19%; 
+            left: -19%;
             transform: rotate(6deg);
         }
+
         span.right {
             right: -19%;
             transform: rotate(-6deg);
@@ -237,11 +244,16 @@
         @apply absolute w-full h-full z-40 rounded-br-full rounded-bl-full;
         border-left: 2px solid #F2BEA5;
         // border-radius:25%;
-        background: #fccdb8; /* Old browsers */
-        background: -moz-linear-gradient(top,  #FDD7C5 0%, #fccdb8 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(top,  #FDD7C5 0%,#fccdb8 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom,  #FDD7C5 0%,#fccdb8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fccdb8', endColorstr='#e0b4a6',GradientType=0 ); /* IE6-9 */
+        background: #fccdb8;
+        /* Old browsers */
+        background: -moz-linear-gradient(top, #FDD7C5 0%, #fccdb8 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #FDD7C5 0%, #fccdb8 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #FDD7C5 0%, #fccdb8 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fccdb8', endColorstr='#e0b4a6', GradientType=0);
+        /* IE6-9 */
     }
 
     .mouth {
@@ -255,16 +267,17 @@
         border-top-left-radius: 10px;
 
         .mouth-inner {
-            @apply block overflow-hidden right-0 left-0 rounded-full absolute w-full bg-white ;
+            @apply block overflow-hidden right-0 left-0 rounded-full absolute w-full bg-white;
             height: 185%;
             top: -100%;
             border-bottom: 15px solid #dd7e77;
         }
+
         .teeth {
             @apply block absolute right-0 left-0 w-full bg-white;
-            box-shadow: 0px 2px 3px rgba(0,0,0,0.25);
-            height:42%;
-            border-radius:40%;
+            box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+            height: 42%;
+            border-radius: 40%;
             top: 47%;
         }
     }

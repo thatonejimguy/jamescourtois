@@ -1,4 +1,4 @@
-<div class="jim {{$class ?? ''}}">
+<div class="jim {{ $class ?? '' }}">
 
     <div class="hair">
         <div class="top">
