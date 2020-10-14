@@ -1170,6 +1170,52 @@ pre code {
   z-index: 10;
   border-radius: 37%;
   background: #FDD7C5;
+  -webkit-animation: swallow 10s linear 4s infinite;
+          animation: swallow 10s linear 4s infinite;
+}
+
+@-webkit-keyframes swallow {
+  0% {
+    height: 100%;
+  }
+
+  4% {
+    height: 98%;
+  }
+
+  8% {
+    height: 98%;
+  }
+
+  10% {
+    height: 100%;
+  }
+
+  100% {
+    height: 100%;
+  }
+}
+
+@keyframes swallow {
+  0% {
+    height: 100%;
+  }
+
+  4% {
+    height: 98%;
+  }
+
+  8% {
+    height: 98%;
+  }
+
+  10% {
+    height: 100%;
+  }
+
+  100% {
+    height: 100%;
+  }
 }
 
 .jim .eye {
