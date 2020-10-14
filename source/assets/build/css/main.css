@@ -1,4 +1,4 @@
-/* a11y-light theme */
+@import url(https://fonts.googleapis.com/css2?family=Ultra&display=swap);/* a11y-light theme */
 
 /* Based on the Tomorrow Night Eighties theme: https://github.com/isagalaev/highlight.js/blob/master/src/styles/tomorrow-night-eighties.css */
 
@@ -1386,44 +1386,64 @@ pre code {
 @-webkit-keyframes close-mouth {
   0% {
     top: 75%;
+    width: 40%;
+    left: 30%;
   }
 
   2% {
     top: 76%;
+    width: 33%;
+    left: 34%;
   }
 
   8% {
     top: 76%;
+    width: 33%;
+    left: 34%;
   }
 
   10% {
     top: 75%;
+    width: 40%;
+    left: 30%;
   }
 
   100% {
     top: 75%;
+    width: 40%;
+    left: 30%;
   }
 }
 
 @keyframes close-mouth {
   0% {
     top: 75%;
+    width: 40%;
+    left: 30%;
   }
 
   2% {
     top: 76%;
+    width: 33%;
+    left: 34%;
   }
 
   8% {
     top: 76%;
+    width: 33%;
+    left: 34%;
   }
 
   10% {
     top: 75%;
+    width: 40%;
+    left: 30%;
   }
 
   100% {
     top: 75%;
+    width: 40%;
+    left: 30%;
   }
 }
 
@@ -10897,6 +10917,10 @@ pre code {
 
 .font-mono{
   font-family: monospace;
+}
+
+.font-heading{
+  font-family: Ultra;
 }
 
 .font-hairline{
@@ -31494,6 +31518,10 @@ pre code {
     font-family: monospace;
   }
 
+  .sm\:font-heading{
+    font-family: Ultra;
+  }
+
   .sm\:font-hairline{
     font-weight: 100;
   }
@@ -52014,6 +52042,10 @@ pre code {
 
   .md\:font-mono{
     font-family: monospace;
+  }
+
+  .md\:font-heading{
+    font-family: Ultra;
   }
 
   .md\:font-hairline{
@@ -72538,6 +72570,10 @@ pre code {
     font-family: monospace;
   }
 
+  .lg\:font-heading{
+    font-family: Ultra;
+  }
+
   .lg\:font-hairline{
     font-weight: 100;
   }
@@ -93058,6 +93094,10 @@ pre code {
 
   .xl\:font-mono{
     font-family: monospace;
+  }
+
+  .xl\:font-heading{
+    font-family: Ultra;
   }
 
   .xl\:font-hairline{

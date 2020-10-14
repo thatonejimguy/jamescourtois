@@ -18,6 +18,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        'heading': [
+          'Ultra'
+        ],
         sans: [
           'Nunito Sans'
         ],

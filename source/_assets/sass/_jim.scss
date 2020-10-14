@@ -267,11 +267,31 @@
         border-top-left-radius: 10px;
         animation: close-mouth 15s linear 8s infinite;
         @keyframes close-mouth {
-            0%{top:75%;}
-            2%{top:76%;}
-            8%{top:76%;}
-            10%{top:75%;}
-            100%{top:75%;}
+            0%{
+                top:75%;
+                width: 40%;
+                left: 30%;
+            }
+            2%{
+                top:76%;
+                width:33%;
+                left: 34%;
+            }
+            8%{
+                top:76%;
+                width:33%;
+                left: 34%;
+            }
+            10%{
+                top:75%;
+                width: 40%;
+                left: 30%;
+            }
+            100%{
+                top:75%;
+                width: 40%;
+                left: 30%;
+            }
         }
 
 
