@@ -7,6 +7,7 @@
     flex-flow: column;
     align-items: stretch;
     justify-content: flex-start;
+    
 
     .hair {
         @apply absolute w-full z-40;
@@ -183,11 +184,11 @@
             transform:rotate(-2deg);
             top: 32%;
         }
-        22%{
+        44%{
             transform:rotate(-2deg);
             top: 32%;
         }
-        24%{
+        46%{
             transform:rotate(0deg);
             top: 33%;
         }
@@ -202,14 +203,14 @@
             top: 33%;
         }
         2%{
-            transform:rotate(2deg);
+            transform:rotate(2.5deg);
             top: 32.5%;
         }
-        22%{
-            transform:rotate(2deg);
+        44%{
+            transform:rotate(2.5deg);
             top: 32.5%;
         }
-        24%{
+        46%{
             transform:rotate(0deg);
             top: 33%;
         }
