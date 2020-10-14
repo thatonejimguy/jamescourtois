@@ -1255,15 +1255,15 @@ pre code {
 .jim .eyebrow.left {
   transform: skew(15deg) rotate(1deg);
   left: 15%;
-  -webkit-animation: left-brow 15s linear 5s infinite;
-          animation: left-brow 15s linear 5s infinite;
+  -webkit-animation: left-brow 10s linear 5s infinite;
+          animation: left-brow 10s linear 5s infinite;
 }
 
 .jim .eyebrow.right {
   transform: skew(-15deg) rotate(-1deg);
   left: 63%;
-  -webkit-animation: right-brow 15s linear 5s infinite;
-          animation: right-brow 15s linear 5s infinite;
+  -webkit-animation: right-brow 10s linear 5s infinite;
+          animation: right-brow 10s linear 5s infinite;
 }
 
 @-webkit-keyframes left-brow {
@@ -1491,8 +1491,8 @@ pre code {
   border-top: 8px solid #c46f69;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  -webkit-animation: close-mouth 15s linear 4s infinite;
-          animation: close-mouth 15s linear 4s infinite;
+  -webkit-animation: close-mouth 10s linear 4s infinite;
+          animation: close-mouth 10s linear 4s infinite;
 }
 
 @-webkit-keyframes close-mouth {
@@ -1502,19 +1502,19 @@ pre code {
     left: 30%;
   }
 
-  2% {
-    top: 76%;
-    width: 33%;
-    left: 34%;
-  }
-
-  7% {
+  4% {
     top: 76%;
     width: 33%;
     left: 34%;
   }
 
   8% {
+    top: 76%;
+    width: 33%;
+    left: 34%;
+  }
+
+  10% {
     top: 75%;
     width: 40%;
     left: 30%;
@@ -1534,19 +1534,19 @@ pre code {
     left: 30%;
   }
 
-  2% {
-    top: 76%;
-    width: 33%;
-    left: 34%;
-  }
-
-  7% {
+  4% {
     top: 76%;
     width: 33%;
     left: 34%;
   }
 
   8% {
+    top: 76%;
+    width: 33%;
+    left: 34%;
+  }
+
+  10% {
     top: 75%;
     width: 40%;
     left: 30%;
@@ -1573,8 +1573,8 @@ pre code {
   height: 180%;
   top: -100%;
   border-bottom: 15px solid #dd7e77;
-  -webkit-animation: close-mouth-inner 15s linear 4s infinite;
-          animation: close-mouth-inner 15s linear 4s infinite;
+  -webkit-animation: close-mouth-inner 10s linear 4s infinite;
+          animation: close-mouth-inner 10s linear 4s infinite;
 }
 
 @-webkit-keyframes close-mouth-inner {
@@ -1582,15 +1582,15 @@ pre code {
     height: 180%;
   }
 
-  2% {
-    height: 145%;
-  }
-
-  7% {
+  4% {
     height: 145%;
   }
 
   8% {
+    height: 145%;
+  }
+
+  10% {
     height: 180%;
   }
 
@@ -1604,15 +1604,15 @@ pre code {
     height: 180%;
   }
 
-  2% {
-    height: 145%;
-  }
-
-  7% {
+  4% {
     height: 145%;
   }
 
   8% {
+    height: 145%;
+  }
+
+  10% {
     height: 180%;
   }
 

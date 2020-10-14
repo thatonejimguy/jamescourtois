@@ -32,7 +32,7 @@
                     <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">
                     
 
-                        <h1 class="text-lg md:text-2xl text-white font-normal font-heading my-0">{{ $page->siteName }}</h1>
+                        <h1 class="text-lg md:text-2xl text-white font-normal my-0">{{ $page->siteName }}</h1>
                     </a>
                 </div>
 
