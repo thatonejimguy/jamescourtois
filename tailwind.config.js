@@ -33,8 +33,8 @@ module.exports = {
         loose: '1.75',
       },
       colors:{
-        'green' : '#13F0B2',
-        'purple' : '#105057',
+        'theme-light' : '#13F0B2',
+        'theme-dark' : '#105057',
       },
       maxWidth: {
         none: 'none',

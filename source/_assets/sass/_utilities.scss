@@ -1,5 +1,5 @@
 .home-title {
-    @apply text-green font-heading font-bold m-0 relative z-40;
+    @apply text-theme-light font-heading font-bold m-0 relative z-40;
     font-size: 5rem;
     line-height:5rem;
     @screen md {
@@ -15,3 +15,28 @@
         // margin-top:-3rem;
     }
 }
+
+.btn,
+a.btn,
+a.btn:visited {
+    @apply text-white text-center font-normal overflow-hidden rounded-full px-4 py-2 z-20 relative inline-block border border-white bg-transparent;
+    @include transition;
+    &:after {
+        content: '';
+        @include transition;
+        @apply absolute bg-white block z-10 h-full w-full left-0 right-0;
+        top:100%;
+    }
+    > * {
+        @apply relative z-20;
+    }
+    &:active,
+    &:hover {
+        @apply text-theme-dark;
+    }
+    &:active:after,
+    &:hover:after {
+        top:0;
+    }
+}
+

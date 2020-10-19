@@ -1,10 +1,3 @@
-//automatically size the face based on width
-@mixin face($width) {
-    width: $width;
-    min-width: $width;
-    height: $width * 1.5;
-}
-
 .jim {
     @apply relative mx-auto flex flex-col items-stretch justify-start z-30;
     @include face(215px);
