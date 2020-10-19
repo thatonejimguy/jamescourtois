@@ -19,10 +19,10 @@ module.exports = {
     extend: {
       fontFamily: {
         'heading': [
-          'Ultra'
+          'Alegreya'
         ],
         sans: [
-          'Nunito Sans'
+          'Ubuntu'
         ],
         mono: [
           'monospace',
@@ -33,7 +33,8 @@ module.exports = {
         loose: '1.75',
       },
       colors:{
-        'purple' : '#523b75',
+        'green' : '#13F0B2',
+        'purple' : '#3C0DA3',
       },
       maxWidth: {
         none: 'none',
@@ -43,6 +44,9 @@ module.exports = {
       spacing: {
         '7': '1.75rem',
         '9': '2.25rem'
+      },
+      borderRadius: {
+        '50': '50%',
       },
       boxShadow: {
         'lg': '0 -1px 27px 0 rgba(0, 0, 0, 0.04), 0 4px 15px 0 rgba(0, 0, 0, 0.08)',
@@ -58,7 +62,7 @@ module.exports = {
       '3xl': '1.75rem',
       '4xl': '2.125rem',
       '5xl': '2.625rem',
-      '6xl': '10rem',
+      '6xl': '9rem',
     },
   },
   variants: {

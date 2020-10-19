@@ -5,7 +5,7 @@ use Illuminate\Support\Str;
 return [
     'baseUrl' => '',
     'production' => false,
-    'siteName' => 'James Courtois',
+    'siteName' => 'jamescourtois.me',
     'siteDescription' => 'Cool guy',
     'siteAuthor' => 'James Courtois',
 

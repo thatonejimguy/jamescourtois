@@ -1,19 +1,21 @@
-.jim {
-    position: relative;
-    width: 236px;
-    height: 352px;
-    margin: 0 auto;
-    display: flex;
-    flex-flow: column;
-    align-items: stretch;
-    justify-content: flex-start;
-    
 
+
+.jim {
+    @apply relative mx-auto flex flex-col items-stretch justify-start z-30;
+    width: 215px;
+    min-width: 215px;
+    height: 325px; 
+
+    &.in-header {
+        width:50px;
+        min-width:50px;
+        height:75px;
+    }
+       
     .hair {
         @apply absolute w-full z-40;
         top: -5%;
         height: 28%;
-
 
         .top {
             @apply absolute z-40 overflow-hidden;
@@ -25,10 +27,9 @@
                 @apply block absolute h-full w-full;
                 background: #704c2f;
                 height: 200%;
-                border-radius: 40%;
+                border-radius: 45%;
             }
         }
-
 
         .right {
             @apply absolute right-0 rounded-full z-40;
@@ -37,7 +38,6 @@
             background: #704c2f;
             top: 78%;
             right: -5%;
-
         }
 
         .left {
@@ -54,45 +54,38 @@
             background: #FDD7C5;
             width: 44%;
             height: 72%;
-            top: 64%;
+            top: 62%;
             left: 50%;
         }
 
         .curl {
             @apply absolute block z-50;
-            width: 49%;
+            width: 50%;
             height: 51%;
-            top: 63%;
-            left: 1%;
+            top: 66%;
 
             &:before {
                 content: '';
                 @apply block absolute w-full h-full rounded-full bottom-0 z-10;
                 background: #704c2f;
-                right: -1px;
-
             }
 
             &:after {
                 content: '';
                 @apply block absolute w-full rounded-full h-full z-0;
                 background: #56402f;
-                bottom: -2px;
-                right:-1px;
+                bottom:-4%;
             }
         }
-
     }
 
     .ear {
         @apply absolute z-50;
         background: #FDD7C5;
         width: 10%;
-        height: 23%;
+        height: 25%;
         border-radius: 25%;
-        position: absolute;
-        top: 40%;
-
+        top: 39%;
 
         &.left {
             left: -9%;
@@ -106,10 +99,11 @@
     }
 
     .head {
-        @apply w-full h-full z-10;
-        border-radius: 37%;
+        @apply w-full z-10;
+        height:100%;
+        border-radius: 39%;
         background: #FDD7C5;
-        animation: swallow 10s linear 4s infinite;
+        animation: swallow 12s linear 3s infinite;
         @keyframes swallow {
             0%{
                 height:100%;
@@ -117,10 +111,10 @@
             4%{
                 height:98%;
             }
-            8%{
+            12%{
                 height:98%;
             }
-            10%{
+            15%{
                 height:100%;
             }
             100%{
@@ -133,35 +127,32 @@
 
 
     .eye {
-        @apply z-50 absolute block overflow-hidden;
+        @apply z-50 absolute block overflow-hidden bg-white;
         width: 23%;
-        height: 7.75%;
+        height: 6.25%;
         border-radius: 100% / 75%;
-        background: #fff;
-        top: 40%;
-        border-bottom: 1px solid #fbbc95;
-        border-top: 4px solid #eac1a8;
-        animation: blink 8s ease-out 4s infinite;
+        top: 43%;
+        animation: blink 8s ease-out 1s infinite;
 
         @keyframes blink {
             0% {
-                height: 7.75%;
-                top: 40%;
+                height: 6.25%;
+                top: 43%;
             }
 
             2% {
                 height: 0%;
-                top: 45%;
+                top: 47%;
             }
 
             4% {
-                height: 7.75%;
-                top: 40%;
+                height: 6.25%;
+                top: 43%;
             }
 
             100% {
-                height: 7.75%;
-                top: 40%;
+                height: 6.25%;
+                top: 43%;
             }
         }
 
@@ -178,65 +169,68 @@
         @apply absolute block overflow-hidden z-50;
         height: 3%;
         width: 24%;
-        top: 33%;
         background: #704c2f;
         border-radius: 29%;
 
         &.left {
             transform: skew(15deg)rotate(1deg);
             left: 15%;
-            animation: left-brow 10s linear 5s infinite;
+            top: 35.5%;
+            transform:rotate(-2deg);
+            animation: left-brow 15s linear 4s infinite;
         }
 
         &.right {
             transform: skew(-15deg)rotate(-1deg);
             left: 63%;
-            animation: right-brow 10s linear 5s infinite;
+            top: 36%;
+            transform:rotate(2.5deg);
+            animation: right-brow 15s linear 4s infinite;
         }
     }
 
     @keyframes left-brow {
         0%{
-            transform:rotate(0deg);
-            top: 33%;
+            transform:rotate(-2deg);
+            top: 35.5%;
         }
         2%{
-            transform:rotate(-2deg);
-            top: 32%;
+            transform:rotate(-3deg);
+            top: 34%;
         }
         44%{
-            transform:rotate(-2deg);
-            top: 32%;
+            transform:rotate(-3deg);
+            top: 34%;
         }
         46%{
-            transform:rotate(0deg);
-            top: 33%;
+            transform:rotate(-2deg);
+            top: 35.5%;
         }
         100%{
-            transform:rotate(0deg);
-            top: 33%;
+            transform:rotate(-2deg);
+            top: 35.5%;
         }
     }
     @keyframes right-brow {
         0%{
-            transform:rotate(0deg);
-            top: 33%;
+            transform:rotate(2.5);
+            top: 36%;
         }
         2%{
-            transform:rotate(2.5deg);
-            top: 32.5%;
+            transform:rotate(3.5deg);
+            top: 35%;
         }
         44%{
-            transform:rotate(2.5deg);
-            top: 32.5%;
+            transform:rotate(3.5deg);
+            top: 35%;
         }
         46%{
-            transform:rotate(0deg);
-            top: 33%;
+            transform:rotate(2.5);
+            top: 36%;
         }
         100%{
-            transform:rotate(0deg);
-            top: 33%;
+            transform:rotate(2.5);
+            top: 36%;
         }
     }
 
@@ -244,38 +238,35 @@
         @apply block absolute rounded-full mx-auto z-30;
         background: rgb(59, 99, 157);
         background: linear-gradient(0deg, rgba(59, 99, 157, 1) 50%, rgba(53, 183, 221, 1) 100%);
-        width: 47%;
-        height: 112%;
-        top: -6%;
-        left: 27%;
+        width: 50%;
+        height: 120%;
+        top: -10%;
+        left: 25%;
     }
 
     .pupil {
-        @apply absolute rounded-full z-50 block mx-auto;
+        @apply absolute rounded-full z-50 block mx-auto bg-black;
         width: 20%;
         height: 50%;
-        background: #000;
         top: 25%;
         left: 41%;
 
         &:after {
             content: '';
-            @apply block absolute rounded-full;
-            width: 50%;
-            height: 50%;
+            @apply block absolute rounded-full w-1/2;
             background: rgba(255, 255, 255, 0.85);
+            height: 50%;
             top: -1%;
             left: -1%;
         }
     }
 
     .nose {
-        position: absolute;
-        top: 38%;
+        @apply absolute z-50;
+        top: 39%;
         left: 42%;
         height: 28%;
         width: 16%;
-        z-index: 50;
     }
 
     .nostrils {
@@ -309,82 +300,99 @@
     }
 
     .bridge {
-        @apply absolute w-full h-full z-40 rounded-br-full rounded-bl-full;
-        border-left: 2px solid #F2BEA5;
-        // border-radius:25%;
+        @apply absolute h-full z-40 rounded-br-full rounded-bl-full;
+        width:80%;
+        left:10%;
+        right:10%;
         background: #fccdb8;
-        /* Old browsers */
-        background: -moz-linear-gradient(top, #FDD7C5 0%, #fccdb8 100%);
-        /* FF3.6-15 */
-        background: -webkit-linear-gradient(top, #FDD7C5 0%, #fccdb8 100%);
-        /* Chrome10-25,Safari5.1-6 */
         background: linear-gradient(to bottom, #FDD7C5 0%, #fccdb8 100%);
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fccdb8', endColorstr='#e0b4a6', GradientType=0);
-        /* IE6-9 */
+        
+    }
+
+    .bridge-outer {
+        @apply absolute w-full h-full z-30 rounded-br-full rounded-bl-full;
+        background: #f2bea5;
+        background: linear-gradient(to bottom, #FDD7C5 0%, #f2bea5 50%, #f2bea5 100%);
     }
 
     .mouth {
-        @apply flex flex-col justify-start items-stretch absolute overflow-hidden z-50;
-        top: 75%;
+        @apply overflow-hidden relative flex flex-col justify-start items-stretch absolute z-50;
+        top: 76%;
         width: 40%;
-        height: 10.5%;
+        height: 8%;
         left: 30%;
-        border-top: 8px solid #c46f69;
-        border-top-right-radius: 10px;
-        border-top-left-radius: 10px;
-        animation: close-mouth 10s linear 4s infinite;
+        
+        animation: close-mouth 12s linear 3s infinite;
+        
         @keyframes close-mouth {
-            0%{
-                top:75%;
+            0%{            
+                height: 8%;
                 width: 40%;
                 left: 30%;
+                top: 76%;
             }
-            4%{
-                top:76%;
-                width:33%;
-                left: 34%;
+            4%{                
+                height: 6%;
+                width: 35%;
+                left: 32.5%;
+                top: 77%;
             }
-            8%{
-                top:76%;
-                width:33%;
-                left: 34%;
+            12%{
+                height: 6%;
+                width: 35%;
+                left: 32.5%;
+                top: 77%;
             }
-            10%{
-                top:75%;
+            15%{
+                height: 8%;
                 width: 40%;
                 left: 30%;
+                top: 76%;
             }
             100%{
-                top:75%;
+                height: 8%;
                 width: 40%;
                 left: 30%;
+                top: 76%;
             }
         }
 
+        .top-lip {
+            @apply absolute overflow-hidden top-0 left-0 right-0 w-full z-40;
+            height:27.5%;  
+            .fill {
+                @apply block w-full absolute left-0 right-0 rounded-50;
+                background: #c46f69;
+                height:200%;
+                bottom:-100%;
+            }     
+        }
 
         .mouth-inner {
-            @apply block overflow-hidden right-0 left-0 rounded-full absolute w-full bg-white;
-            height: 180%;
-            top: -100%;
-            border-bottom: 15px solid #dd7e77;
-            animation: close-mouth-inner 10s linear 4s infinite;
+            @apply absolute left-0 right-0 block overflow-hidden z-30 right-0 left-0 w-full rounded-50 bg-gray-100;
+            height:45%;
+            top:5%;
+            animation: close-mouth-inner 12s linear 3s infinite;
         }
 
         @keyframes close-mouth-inner {
-            0%{height:180%;}
-            4%{height:145%;}
-            8%{height:145%;}
-            10%{height:180%;}
-            100%{height:180%;}
-        }
+            0%{height:45%;}
+            4%{height:0%;}
+            12%{height:0%;}
+            15%{height:45%;}
+            100%{height:45%;}
+        }        
 
-        .teeth {
-            @apply block absolute right-0 left-0 w-full bg-white;
-            box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
-            height: 42%;
-            border-radius: 40%;
-            top: 47%;
+        .bottom-lip {
+            @apply absolute overflow-hidden w-full left-0 right-0 z-20;     
+            height:72.5%;
+            top:27.5%;
+            .fill {
+                @apply block w-full absolute left-0 right-0 rounded-50;
+                background: #dd7e77;
+                height:200%;
+                top:-100%;
+            } 
         }
     }
 

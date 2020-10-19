@@ -34,6 +34,7 @@
 
     <div class="nose">
         <div class="bridge"></div>
+        <div class="bridge-outer"></div>
         <div class="nostrils">
             <span class="left"></span>
             <span class="right"></span>
@@ -41,8 +42,14 @@
     </div>
 
     <div class="mouth">
+        <div class="top-lip">
+            <span class="fill"></span>
+        </div>
         <div class="mouth-inner">
             <div class="teeth"></div>
+        </div>
+        <div class="bottom-lip">
+            <span class="fill"></span>
         </div>
     </div>
 

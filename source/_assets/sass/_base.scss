@@ -1,15 +1,22 @@
 body {
+    @apply flex flex-col justify-between min-h-screen bg-purple text-gray-100 leading-normal font-sans;
     font-size: 16px;
 }
 
 a {
-    @apply .font-semibold;
-    @apply .no-underline;
-    @apply .text-blue-600;
+    @apply font-semibold text-blue-400;
 
     &:hover {
-        @apply .text-blue-800;
+        @apply text-blue-600;
     }
+
+    &:visited {
+        @apply text-blue-700;
+    }
+}
+
+p > a {
+    @apply underline;
 }
 
 blockquote {
@@ -19,7 +26,6 @@ blockquote {
     @apply .italic;
     @apply .my-8;
     @apply .pl-6;
-    @apply .text-gray-800;
     @apply .text-lg;
 }
 
@@ -49,24 +55,15 @@ h3,
 h4,
 h5,
 h6 {
-    @apply .leading-tight;
-    @apply .mb-4;
-    @apply .mt-8;
-    @apply .text-gray-900;
-
-    &:first-child {
-        @apply .mt-0;
-    }
+    @apply .leading-tight mb-4 mt-8;
 }
 
 h1 {
-    @apply .font-extrabold;
-    @apply .text-5xl;
+    @apply font-extrabold text-5xl;
 }
 
 h2 {
-    @apply .font-bold;
-    @apply .text-4xl;
+    @apply font-bold text-4xl;
 }
 
 h3 {

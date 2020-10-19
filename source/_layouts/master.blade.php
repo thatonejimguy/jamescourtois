@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+   
+    
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -25,35 +27,34 @@
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
     </head>
 
-    <body class="flex flex-col justify-between min-h-screen bg-gray-900 text-gray-800 leading-normal font-sans">
-        <header class="flex items-center shadow bg-purple h-24 py-4" role="banner">
-            <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
-                <div class="flex items-center">
-                    <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">
-                    
-
-                        <h1 class="text-lg md:text-2xl text-white font-normal my-0">{{ $page->siteName }}</h1>
+    <body class="relative">
+        @if( $page->getPath() != '' )
+            <header class="flex items-center justify-end py-1 w-full" role="banner">
+                <div class="container flex items-center max-w-8xl px-1 mx-auto">
+                    <a href="/">
+                        @include('_layouts.jim',['class'=>'in-header'])
+                        <span class="sr-only">jamescourtois.me</span>
                     </a>
+                    <div id="vue-search" class="flex flex-1 justify-end items-center">
+                        <search></search>
+
+                        @include('_nav.menu')
+
+                        @include('_nav.menu-toggle')
+                    </div>
                 </div>
+            </header>       
+        
 
-                {{-- <div id="vue-search" class="flex flex-1 justify-end items-center">
-                    <search></search>
-
-                    @include('_nav.menu')
-
-                    @include('_nav.menu-toggle')
-                </div> --}}
-            </div>
-        </header>
-
-        {{-- @include('_nav.menu-responsive') --}}
+            @include('_nav.menu-responsive')
+        @endif
 
         <main role="main" class="flex-auto w-full container max-w-4xl mx-auto py-16 px-6">
             @yield('body')
         </main>
 
-        <footer class="bg-purple text-center text-sm mt-12 py-4" role="contentinfo">
-            <ul class="flex flex-col md:flex-row justify-center list-none text-white">
+        <footer class="text-center text-xs py-1" role="contentinfo">
+            <ul class="flex flex-col m-0 md:flex-row justify-center list-none ">
                 <li class="md:mr-2">
                     &copy; James Courtois {{ date('Y') }}.
                 </li>
