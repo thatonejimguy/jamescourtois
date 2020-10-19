@@ -1051,20 +1051,20 @@ pre code {
   z-index: 30;
   width: 215px;
   min-width: 215px;
-  height: 290.25px;
+  height: 283.8px;
 }
 
 .jim.in-header {
   width: 50px;
   min-width: 50px;
-  height: 67.5px;
+  height: 66px;
 }
 
 .jim.home-page {
   margin-top: 2rem;
   width: 185px;
   min-width: 185px;
-  height: 249.75px;
+  height: 244.2px;
 }
 
 @media (min-width: 768px) {
@@ -1073,7 +1073,7 @@ pre code {
     margin-right: 2rem;
     width: 215px;
     min-width: 215px;
-    height: 290.25px;
+    height: 283.8px;
   }
 }
 
@@ -1087,7 +1087,7 @@ pre code {
   .jim.home-page {
     width: 260px;
     min-width: 260px;
-    height: 351px;
+    height: 343.2px;
   }
 }
 
@@ -1125,7 +1125,7 @@ pre code {
   border-radius: 9999px;
   z-index: 40;
   width: 8%;
-  height: 124%;
+  height: 100%;
   background: #704c2f;
   top: 78%;
   right: 1%;
@@ -1137,7 +1137,7 @@ pre code {
   border-radius: 9999px;
   z-index: 40;
   width: 8%;
-  height: 124%;
+  height: 100%;
   background: #704c2f;
   top: 78%;
   left: 1%;
@@ -1193,7 +1193,7 @@ pre code {
   position: absolute;
   z-index: 50;
   background: #FDD7C5;
-  width: 6%;
+  width: 7%;
   height: 25%;
   border-radius: 25%;
   top: 39%;
@@ -1214,8 +1214,8 @@ pre code {
   position: absolute;
   height: 98%;
   top: 2%;
-  width: 88%;
-  left: 6%;
+  width: 87%;
+  left: 6.5%;
   border-radius: 39%;
   background: #FDD7C5;
   -webkit-animation: swallow 12s linear 3s infinite;
@@ -1277,7 +1277,7 @@ pre code {
   width: 20%;
   height: 6.25%;
   border-radius: 100%/75%;
-  top: 44%;
+  top: 45%;
   -webkit-animation: blink 8s ease-out 1s infinite;
           animation: blink 8s ease-out 1s infinite;
 }
@@ -1285,44 +1285,44 @@ pre code {
 @-webkit-keyframes blink {
   0% {
     height: 6.25%;
-    top: 44%;
+    top: 45%;
   }
 
   2% {
     height: 0%;
-    top: 47%;
+    top: 48%;
   }
 
   4% {
     height: 6.25%;
-    top: 44%;
+    top: 45%;
   }
 
   100% {
     height: 6.25%;
-    top: 44%;
+    top: 45%;
   }
 }
 
 @keyframes blink {
   0% {
     height: 6.25%;
-    top: 44%;
+    top: 45%;
   }
 
   2% {
     height: 0%;
-    top: 47%;
+    top: 48%;
   }
 
   4% {
     height: 6.25%;
-    top: 44%;
+    top: 45%;
   }
 
   100% {
     height: 6.25%;
-    top: 44%;
+    top: 45%;
   }
 }
 
@@ -1348,7 +1348,7 @@ pre code {
 .jim .eyebrow.left {
   transform: skew(15deg) rotate(1deg);
   left: 19%;
-  top: 37.5%;
+  top: 38.5%;
   transform: rotate(-1deg);
   -webkit-animation: left-brow 15s linear 4s infinite;
           animation: left-brow 15s linear 4s infinite;
@@ -1357,7 +1357,7 @@ pre code {
 .jim .eyebrow.right {
   transform: skew(-15deg) rotate(-1deg);
   left: 62%;
-  top: 38%;
+  top: 39%;
   transform: rotate(1.5deg);
   -webkit-animation: right-brow 15s linear 4s infinite;
           animation: right-brow 15s linear 4s infinite;
@@ -1366,7 +1366,7 @@ pre code {
 @-webkit-keyframes left-brow {
   0% {
     transform: rotate(-1deg);
-    top: 37.5%;
+    top: 38.5%;
   }
 
   2% {
@@ -1381,19 +1381,19 @@ pre code {
 
   46% {
     transform: rotate(-1deg);
-    top: 37.5%;
+    top: 38.5%;
   }
 
   100% {
     transform: rotate(-1deg);
-    top: 37.5%;
+    top: 38.5%;
   }
 }
 
 @keyframes left-brow {
   0% {
     transform: rotate(-1deg);
-    top: 37.5%;
+    top: 38.5%;
   }
 
   2% {
@@ -1408,19 +1408,19 @@ pre code {
 
   46% {
     transform: rotate(-1deg);
-    top: 37.5%;
+    top: 38.5%;
   }
 
   100% {
     transform: rotate(-1deg);
-    top: 37.5%;
+    top: 38.5%;
   }
 }
 
 @-webkit-keyframes right-brow {
   0% {
     transform: rotate(1.5deg);
-    top: 38%;
+    top: 39%;
   }
 
   2% {
@@ -1435,19 +1435,19 @@ pre code {
 
   46% {
     transform: rotate(1.5deg);
-    top: 38%;
+    top: 39%;
   }
 
   100% {
     transform: rotate(2.5);
-    top: 38%;
+    top: 39%;
   }
 }
 
 @keyframes right-brow {
   0% {
     transform: rotate(1.5deg);
-    top: 38%;
+    top: 39%;
   }
 
   2% {
@@ -1462,12 +1462,12 @@ pre code {
 
   46% {
     transform: rotate(1.5deg);
-    top: 38%;
+    top: 39%;
   }
 
   100% {
     transform: rotate(2.5);
-    top: 38%;
+    top: 39%;
   }
 }
 
@@ -1519,7 +1519,7 @@ pre code {
   z-index: 50;
   top: 41%;
   left: 43%;
-  height: 28%;
+  height: 27%;
   width: 14%;
 }
 
@@ -1578,7 +1578,7 @@ pre code {
   border-bottom-right-radius: 9999px;
   border-bottom-left-radius: 9999px;
   background: #f2bea5;
-  background: linear-gradient(to bottom, #FDD7C5 0%, #f2bea5 50%, #f2bea5 100%);
+  background: linear-gradient(to bottom, #FDD7C5 0%, #f2bea5 70%, #f2bea5 100%);
 }
 
 .jim .mouth {
@@ -13865,6 +13865,10 @@ a.btn:visited:hover:after {
 
 .min-h-0{
   min-height: 0;
+}
+
+.min-h-600{
+  min-height: 600px;
 }
 
 .min-h-full{
@@ -35926,6 +35930,10 @@ a.btn:visited:hover:after {
     min-height: 0;
   }
 
+  .sm\:min-h-600{
+    min-height: 600px;
+  }
+
   .sm\:min-h-full{
     min-height: 100%;
   }
@@ -57910,6 +57918,10 @@ a.btn:visited:hover:after {
 
   .md\:min-h-0{
     min-height: 0;
+  }
+
+  .md\:min-h-600{
+    min-height: 600px;
   }
 
   .md\:min-h-full{
@@ -79898,6 +79910,10 @@ a.btn:visited:hover:after {
     min-height: 0;
   }
 
+  .lg\:min-h-600{
+    min-height: 600px;
+  }
+
   .lg\:min-h-full{
     min-height: 100%;
   }
@@ -101882,6 +101898,10 @@ a.btn:visited:hover:after {
 
   .xl\:min-h-0{
     min-height: 0;
+  }
+
+  .xl\:min-h-600{
+    min-height: 600px;
   }
 
   .xl\:min-h-full{

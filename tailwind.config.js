@@ -32,6 +32,9 @@ module.exports = {
         normal: '1.6',
         loose: '1.75',
       },
+      minHeight: {
+        '600': '600px',
+      },
       colors:{
         'theme-light' : '#13F0B2',
         'theme-dark' : '#105057',
