@@ -4,7 +4,7 @@
 @section('body')
 
 
-<div class="w-full h-screen pb-16 flex flex-col items-center justify-center w-full">
+<div class="w-full h-auto lg:h-screen pb-16 flex flex-col items-center justify-center w-full">
     <div class="flex flex-col md:flex-row items-stretch justify-center relative w-full">
   
         @include('_layouts.jim',['class'=>'home-page'])

@@ -1051,19 +1051,20 @@ pre code {
   z-index: 30;
   width: 215px;
   min-width: 215px;
-  height: 322.5px;
+  height: 290.25px;
 }
 
 .jim.in-header {
   width: 50px;
   min-width: 50px;
-  height: 75px;
+  height: 67.5px;
 }
 
 .jim.home-page {
+  margin-top: 2rem;
   width: 185px;
   min-width: 185px;
-  height: 277.5px;
+  height: 249.75px;
 }
 
 @media (min-width: 768px) {
@@ -1072,7 +1073,7 @@ pre code {
     margin-right: 2rem;
     width: 215px;
     min-width: 215px;
-    height: 322.5px;
+    height: 290.25px;
   }
 }
 
@@ -1086,25 +1087,26 @@ pre code {
   .jim.home-page {
     width: 260px;
     min-width: 260px;
-    height: 390px;
+    height: 351px;
   }
 }
 
 .jim .hair {
   position: absolute;
-  width: 100%;
   z-index: 40;
-  top: -5%;
+  top: 0;
   height: 28%;
+  width: 96%;
+  left: 2%;
 }
 
 .jim .hair .top {
   position: absolute;
   z-index: 40;
   overflow: hidden;
-  width: 110%;
+  width: 98%;
   height: 96%;
-  left: -5%;
+  left: 1%;
 }
 
 .jim .hair .top .fill {
@@ -1122,11 +1124,11 @@ pre code {
   right: 0;
   border-radius: 9999px;
   z-index: 40;
-  width: 11%;
+  width: 8%;
   height: 124%;
   background: #704c2f;
   top: 78%;
-  right: -5%;
+  right: 1%;
 }
 
 .jim .hair .left {
@@ -1134,11 +1136,11 @@ pre code {
   right: 0;
   border-radius: 9999px;
   z-index: 40;
-  width: 11%;
+  width: 8%;
   height: 124%;
   background: #704c2f;
   top: 78%;
-  left: -5%;
+  left: 1%;
 }
 
 .jim .hair .skin {
@@ -1147,7 +1149,7 @@ pre code {
   border-radius: 9999px;
   z-index: 50;
   background: #FDD7C5;
-  width: 44%;
+  width: 41%;
   height: 72%;
   top: 62%;
   left: 50%;
@@ -1157,8 +1159,9 @@ pre code {
   position: absolute;
   display: block;
   z-index: 50;
-  width: 50%;
+  width: 45%;
   height: 51%;
+  left: 5%;
   top: 66%;
 }
 
@@ -1190,26 +1193,29 @@ pre code {
   position: absolute;
   z-index: 50;
   background: #FDD7C5;
-  width: 10%;
+  width: 6%;
   height: 25%;
   border-radius: 25%;
   top: 39%;
 }
 
 .jim .ear.left {
-  left: -9%;
+  left: 0;
   transform: rotate(-5deg);
 }
 
 .jim .ear.right {
-  right: -9%;
+  right: 0;
   transform: rotate(5deg);
 }
 
 .jim .head {
-  width: 100%;
   z-index: 10;
-  height: 100%;
+  position: absolute;
+  height: 98%;
+  top: 2%;
+  width: 88%;
+  left: 6%;
   border-radius: 39%;
   background: #FDD7C5;
   -webkit-animation: swallow 12s linear 3s infinite;
@@ -1218,45 +1224,45 @@ pre code {
 
 @-webkit-keyframes swallow {
   0% {
-    height: 100%;
+    height: 98%;
   }
 
   4% {
-    height: 98%;
+    height: 96%;
   }
 
   12% {
-    height: 98%;
+    height: 96%;
   }
 
   15% {
-    height: 100%;
+    height: 98%;
   }
 
   100% {
-    height: 100%;
+    height: 98%;
   }
 }
 
 @keyframes swallow {
   0% {
-    height: 100%;
+    height: 98%;
   }
 
   4% {
-    height: 98%;
+    height: 96%;
   }
 
   12% {
-    height: 98%;
+    height: 96%;
   }
 
   15% {
-    height: 100%;
+    height: 98%;
   }
 
   100% {
-    height: 100%;
+    height: 98%;
   }
 }
 
@@ -1268,10 +1274,10 @@ pre code {
   --bg-opacity: 1;
   background-color: #fff;
   background-color: rgba(255, 255, 255, var(--bg-opacity));
-  width: 23%;
+  width: 20%;
   height: 6.25%;
   border-radius: 100%/75%;
-  top: 43%;
+  top: 44%;
   -webkit-animation: blink 8s ease-out 1s infinite;
           animation: blink 8s ease-out 1s infinite;
 }
@@ -1279,7 +1285,7 @@ pre code {
 @-webkit-keyframes blink {
   0% {
     height: 6.25%;
-    top: 43%;
+    top: 44%;
   }
 
   2% {
@@ -1289,19 +1295,19 @@ pre code {
 
   4% {
     height: 6.25%;
-    top: 43%;
+    top: 44%;
   }
 
   100% {
     height: 6.25%;
-    top: 43%;
+    top: 44%;
   }
 }
 
 @keyframes blink {
   0% {
     height: 6.25%;
-    top: 43%;
+    top: 44%;
   }
 
   2% {
@@ -1311,21 +1317,21 @@ pre code {
 
   4% {
     height: 6.25%;
-    top: 43%;
+    top: 44%;
   }
 
   100% {
     height: 6.25%;
-    top: 43%;
+    top: 44%;
   }
 }
 
 .jim .eye.left {
-  left: 15%;
+  left: 19%;
 }
 
 .jim .eye.right {
-  left: 63%;
+  left: 61%;
 }
 
 .jim .eyebrow {
@@ -1334,134 +1340,134 @@ pre code {
   overflow: hidden;
   z-index: 50;
   height: 3%;
-  width: 24%;
+  width: 20%;
   background: #704c2f;
   border-radius: 29%;
 }
 
 .jim .eyebrow.left {
   transform: skew(15deg) rotate(1deg);
-  left: 15%;
-  top: 35.5%;
-  transform: rotate(-2deg);
+  left: 19%;
+  top: 37.5%;
+  transform: rotate(-1deg);
   -webkit-animation: left-brow 15s linear 4s infinite;
           animation: left-brow 15s linear 4s infinite;
 }
 
 .jim .eyebrow.right {
   transform: skew(-15deg) rotate(-1deg);
-  left: 63%;
-  top: 36%;
-  transform: rotate(2.5deg);
+  left: 62%;
+  top: 38%;
+  transform: rotate(1.5deg);
   -webkit-animation: right-brow 15s linear 4s infinite;
           animation: right-brow 15s linear 4s infinite;
 }
 
 @-webkit-keyframes left-brow {
   0% {
-    transform: rotate(-2deg);
-    top: 35.5%;
+    transform: rotate(-1deg);
+    top: 37.5%;
   }
 
   2% {
-    transform: rotate(-3deg);
-    top: 34%;
+    transform: rotate(-2deg);
+    top: 36%;
   }
 
   44% {
-    transform: rotate(-3deg);
-    top: 34%;
+    transform: rotate(-2deg);
+    top: 36%;
   }
 
   46% {
-    transform: rotate(-2deg);
-    top: 35.5%;
+    transform: rotate(-1deg);
+    top: 37.5%;
   }
 
   100% {
-    transform: rotate(-2deg);
-    top: 35.5%;
+    transform: rotate(-1deg);
+    top: 37.5%;
   }
 }
 
 @keyframes left-brow {
   0% {
-    transform: rotate(-2deg);
-    top: 35.5%;
+    transform: rotate(-1deg);
+    top: 37.5%;
   }
 
   2% {
-    transform: rotate(-3deg);
-    top: 34%;
+    transform: rotate(-2deg);
+    top: 36%;
   }
 
   44% {
-    transform: rotate(-3deg);
-    top: 34%;
+    transform: rotate(-2deg);
+    top: 36%;
   }
 
   46% {
-    transform: rotate(-2deg);
-    top: 35.5%;
+    transform: rotate(-1deg);
+    top: 37.5%;
   }
 
   100% {
-    transform: rotate(-2deg);
-    top: 35.5%;
+    transform: rotate(-1deg);
+    top: 37.5%;
   }
 }
 
 @-webkit-keyframes right-brow {
   0% {
-    transform: rotate(2.5);
-    top: 36%;
+    transform: rotate(1.5deg);
+    top: 38%;
   }
 
   2% {
-    transform: rotate(3.5deg);
-    top: 35%;
+    transform: rotate(2deg);
+    top: 37%;
   }
 
   44% {
-    transform: rotate(3.5deg);
-    top: 35%;
+    transform: rotate(2deg);
+    top: 37%;
   }
 
   46% {
-    transform: rotate(2.5);
-    top: 36%;
+    transform: rotate(1.5deg);
+    top: 38%;
   }
 
   100% {
     transform: rotate(2.5);
-    top: 36%;
+    top: 38%;
   }
 }
 
 @keyframes right-brow {
   0% {
-    transform: rotate(2.5);
-    top: 36%;
+    transform: rotate(1.5deg);
+    top: 38%;
   }
 
   2% {
-    transform: rotate(3.5deg);
-    top: 35%;
+    transform: rotate(2deg);
+    top: 37%;
   }
 
   44% {
-    transform: rotate(3.5deg);
-    top: 35%;
+    transform: rotate(2deg);
+    top: 37%;
   }
 
   46% {
-    transform: rotate(2.5);
-    top: 36%;
+    transform: rotate(1.5deg);
+    top: 38%;
   }
 
   100% {
     transform: rotate(2.5);
-    top: 36%;
+    top: 38%;
   }
 }
 
@@ -1511,10 +1517,10 @@ pre code {
 .jim .nose {
   position: absolute;
   z-index: 50;
-  top: 39%;
-  left: 42%;
+  top: 41%;
+  left: 43%;
   height: 28%;
-  width: 16%;
+  width: 14%;
 }
 
 .jim .nostrils {
@@ -1584,10 +1590,10 @@ pre code {
   align-items: stretch;
   position: absolute;
   z-index: 50;
-  top: 76%;
-  width: 40%;
+  top: 77%;
+  width: 35%;
   height: 8%;
-  left: 30%;
+  left: 32.5%;
   -webkit-animation: close-mouth 12s linear 3s infinite;
           animation: close-mouth 12s linear 3s infinite;
 }
@@ -1595,74 +1601,74 @@ pre code {
 @-webkit-keyframes close-mouth {
   0% {
     height: 8%;
-    width: 40%;
-    left: 30%;
-    top: 76%;
+    width: 35%;
+    left: 32.5%;
+    top: 77%;
   }
 
   4% {
     height: 6%;
-    width: 35%;
-    left: 32.5%;
-    top: 77%;
+    width: 30%;
+    left: 35%;
+    top: 76.5%;
   }
 
   12% {
     height: 6%;
+    width: 30%;
+    left: 35%;
+    top: 76.5%;
+  }
+
+  15% {
+    height: 8%;
     width: 35%;
     left: 32.5%;
     top: 77%;
   }
 
-  15% {
-    height: 8%;
-    width: 40%;
-    left: 30%;
-    top: 76%;
-  }
-
   100% {
     height: 8%;
-    width: 40%;
-    left: 30%;
-    top: 76%;
+    width: 35%;
+    left: 32.5%;
+    top: 77%;
   }
 }
 
 @keyframes close-mouth {
   0% {
     height: 8%;
-    width: 40%;
-    left: 30%;
-    top: 76%;
+    width: 35%;
+    left: 32.5%;
+    top: 77%;
   }
 
   4% {
     height: 6%;
-    width: 35%;
-    left: 32.5%;
-    top: 77%;
+    width: 30%;
+    left: 35%;
+    top: 76.5%;
   }
 
   12% {
     height: 6%;
+    width: 30%;
+    left: 35%;
+    top: 76.5%;
+  }
+
+  15% {
+    height: 8%;
     width: 35%;
     left: 32.5%;
     top: 77%;
   }
 
-  15% {
-    height: 8%;
-    width: 40%;
-    left: 30%;
-    top: 76%;
-  }
-
   100% {
     height: 8%;
-    width: 40%;
-    left: 30%;
-    top: 76%;
+    width: 35%;
+    left: 32.5%;
+    top: 77%;
   }
 }
 
