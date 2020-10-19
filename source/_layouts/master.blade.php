@@ -49,11 +49,11 @@
             @include('_nav.menu-responsive')
         @endif
 
-        <main role="main" class="flex-auto w-full container mx-auto py-8 px-6">
+        <main role="main" class="flex-auto w-full container mx-auto">
             @yield('body')
         </main>
 
-        <footer class="text-center text-xs py-1" role="contentinfo">
+        <footer class="absolute w-full text-center bottom-0 z-50 text-xs py-1" role="contentinfo">
             <ul class="flex flex-col m-0 md:flex-row justify-center list-none ">
                 <li class="md:mr-2">
                     &copy; James Courtois {{ date('Y') }}.
