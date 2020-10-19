@@ -30,7 +30,7 @@
     <body class="relative">
         @if( $page->getPath() != '' )
             <header class="flex items-center justify-end py-1 w-full" role="banner">
-                <div class="container flex items-center max-w-8xl px-1 mx-auto">
+                <div class="container flex items-center px-1 mx-auto">
                     <a href="/">
                         @include('_layouts.jim',['class'=>'in-header'])
                         <span class="sr-only">jamescourtois.me</span>
@@ -49,7 +49,7 @@
             @include('_nav.menu-responsive')
         @endif
 
-        <main role="main" class="flex-auto w-full container max-w-4xl mx-auto py-16 px-6">
+        <main role="main" class="flex-auto w-full container mx-auto py-8 px-6">
             @yield('body')
         </main>
 

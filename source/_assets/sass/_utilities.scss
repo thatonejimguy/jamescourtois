@@ -1,17 +1,17 @@
 .home-title {
-    @apply text-green font-heading font-bold italic relative z-40;
-    font-size: 6rem;
+    @apply text-green font-heading font-bold m-0 relative z-40;
+    font-size: 5rem;
     line-height:5rem;
-    margin-top:-2.25rem;
     @screen md {
-        font-size:7rem;
-        line-height:5rem;
+        font-size:6rem;
+        line-height:6rem;
     } @screen lg {
-        font-size:9rem;
-        line-height:7rem;
+        font-size:10rem;
+        line-height:10rem;
     } 
     @screen xl {
-        font-size:11rem;
-        line-height:9rem;
+        font-size:13.5rem;
+        line-height:12rem;
+        // margin-top:-3rem;
     }
 }

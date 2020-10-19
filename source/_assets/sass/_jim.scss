@@ -1,15 +1,31 @@
-
+//automatically size the face based on width
+@mixin face($width) {
+    width: $width;
+    min-width: $width;
+    height: $width * 1.5;
+}
 
 .jim {
     @apply relative mx-auto flex flex-col items-stretch justify-start z-30;
-    width: 215px;
-    min-width: 215px;
-    height: 325px; 
+    @include face(215px);
 
     &.in-header {
-        width:50px;
-        min-width:50px;
-        height:75px;
+        @include face(50px);
+    }
+
+    &.home-page {
+        @include face(185px); 
+        
+        @screen md {
+            @apply mx-8;
+            @include face(215px);
+        }
+        @screen lg {
+            @apply mr-0;
+        }
+        @screen xl {
+            @include face(260px);
+        }
     }
        
     .hair {

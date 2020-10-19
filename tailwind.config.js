@@ -19,10 +19,10 @@ module.exports = {
     extend: {
       fontFamily: {
         'heading': [
-          'Alegreya'
+          'Playfair Display'
         ],
         sans: [
-          'Ubuntu'
+          'Raleway'
         ],
         mono: [
           'monospace',
@@ -34,7 +34,7 @@ module.exports = {
       },
       colors:{
         'green' : '#13F0B2',
-        'purple' : '#3C0DA3',
+        'purple' : '#105057',
       },
       maxWidth: {
         none: 'none',
