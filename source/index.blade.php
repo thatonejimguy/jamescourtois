@@ -22,6 +22,25 @@
         <a href="#3" class="btn my-2 mx-auto md:mx-2 lg:mx-8 flex-1 w-full max-w-xs"><span>I am easy to reach</span></a>
     </div>
 </div>
+<div class="w-full">
+    @foreach ($posts->where('categories',['websites'])->take(6)->chunk(2) as $row)
+    <div class="flex flex-col md:flex-row md:-mx-6">
+        @foreach ($row as $post)
+            <div class="w-full md:w-1/2 md:mx-6">
+                @include('_components.post-preview-inline')
+            </div>
+
+            @if (! $loop->last)
+                <hr class="block md:hidden w-full border-b mt-2 mb-6">
+            @endif
+        @endforeach
+    </div>
+
+    @if (! $loop->last)
+        <hr class="w-full border-b mt-2 mb-6">
+    @endif
+@endforeach
+</div>
 
 
 @stop

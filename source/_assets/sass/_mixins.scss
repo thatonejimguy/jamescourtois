@@ -1,0 +1,11 @@
+//automatically size the face based on width
+@mixin face($width) {
+    width: $width;
+    min-width: $width;
+    height: $width * 1.32;
+}
+
+//global transition for anchors and button
+@mixin transition {
+    transition:200ms ease-out;
+}

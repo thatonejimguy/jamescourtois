@@ -16,6 +16,16 @@ return [
             'sort' => '-date',
             'path' => 'blog/{filename}',
         ],
+        'websites' => [
+            'author' => 'Author Name', // Default author, if not provided in a post
+            'sort' => '-date',
+            'path' => 'websites/{filename}',
+        ],
+        'artwork' => [
+            'author' => 'Author Name', // Default author, if not provided in a post
+            'sort' => '-date',
+            'path' => 'artwork/{filename}',
+        ],
         'categories' => [
             'path' => '/blog/categories/{filename}',
             'posts' => function ($page, $allPosts) {

@@ -10,6 +10,15 @@
             class="font-extrabold"
         >{{ $post->title }}</a>
     </h2>
+    <div class="">
+        {{-- @php
+            var_dump($post);
+            
+        @endphp --}}
+        @foreach ($post->categories as $cat)
+    <a href="/blog/categories/{{$cat}}">{{$cat}}</a>
+        @endforeach
+    </div>
 
     <p class="mb-4 mt-0">{!! $post->getExcerpt(200) !!}</p>
 
