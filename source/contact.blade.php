@@ -10,7 +10,7 @@ description: Get in touch with us
     <div class="flex-1">
         <h1>Let's Start a Conversation</h1>
         <p class="mb-8">
-            Fill this form with formative information and a formal email will be formed and forwarded to me for for a formulated
+            Fill this form with formative information and a formal email will be formed and forwarded to me for a formulated
             response within the fortnight.
         </p>
         <form id="jimform" action="https://www.form-data.com/_functions/submit/9ay1vdav3uerkwj1pcoghl" method="POST">
