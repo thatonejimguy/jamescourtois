@@ -5,6 +5,7 @@ description: Get in touch with us
 @extends('_layouts.master')
 
 @section('body')
+
 <div class="flex flex-col lg:flex-row">
 
     <div class="flex-1">
@@ -13,6 +14,23 @@ description: Get in touch with us
             Fill this form with formative information and a formal email will be formed and forwarded to me for a formulated
             response within the fortnight.
         </p>
+
+        <script>
+            function onloadCallback() {
+                /* Place your recaptcha rendering code here */
+                var form = document.getElementById('jimform');
+
+                form.addEventListener("submit", function (event) {
+                    if (grecaptcha.getResponse() === '') {
+                        event.preventDefault();
+                        alert('Please check the recaptcha box and try submitting again.');
+                    }
+                }, false);
+            }
+        </script>
+
+        <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback"></script>
+
         <form id="jimform" action="https://www.form-data.com/_functions/submit/9ay1vdav3uerkwj1pcoghl" method="POST">
             <div class="flex min-w-full -mx-3 mb-4">
                 <div class="px-3 flex-1">
@@ -41,12 +59,12 @@ description: Get in touch with us
             </div>
         
         
-            <div class="w-full mb-12"><label for="contact-message"
+            <div class="w-full mb-6"><label for="contact-message"
                 class="block text-sm mb-2">Can you give me some details?*</label><textarea id="contact-message" rows="4"
                 name="message" placeholder="Spill the beans." required="required"
                 class="block w-full border shadow rounded-lg outline-none appearance-none mb-2 px-4 py-3 text-gray-800"></textarea>
             </div>
-            <div class="g-recaptcha" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>
+            <div class="g-recaptcha mb-6" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>
             <div class="flex w-full"><button type="submit" class="btn"><span>Submit</span></button></div>
         </form>
         
@@ -64,19 +82,5 @@ description: Get in touch with us
 
 </div>
 
-<script>
-    function onloadCallback() {
-        /* Place your recaptcha rendering code here */
-        var form = document.getElementById('jimform');
-
-        form.addEventListener("submit", function (event) {
-            if (grecaptcha.getResponse() === '') {
-                event.preventDefault();
-                alert('Please check the recaptcha box and try submitting again.');
-            }
-        }, false);
-    }
-</script>
-<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"></script>
 
 @stop
