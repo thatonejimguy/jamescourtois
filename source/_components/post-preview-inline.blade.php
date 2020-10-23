@@ -7,24 +7,14 @@
         <a
             href="{{ $post->getUrl() }}"
             title="Read more - {{ $post->title }}"
-            class="font-extrabold"
+            class=""
         >{{ $post->title }}</a>
     </h2>
     <div class="">
-        {{-- @php
-            var_dump($post);
-            
-        @endphp --}}
         @foreach ($post->categories as $cat)
     <a href="/blog/categories/{{$cat}}">{{$cat}}</a>
         @endforeach
     </div>
 
     <p class="mb-4 mt-0">{!! $post->getExcerpt(200) !!}</p>
-
-    <a
-        href="{{ $post->getUrl() }}"
-        title="Read more - {{ $post->title }}"
-        class="uppercase font-semibold tracking-wide mb-2"
-    >Read</a>
 </div>

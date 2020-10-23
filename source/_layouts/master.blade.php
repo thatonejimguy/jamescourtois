@@ -27,33 +27,35 @@
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
     </head>
 
-    <body class="relative">
-        @if( $page->getPath() != '' )
-            <header class="flex items-center justify-end py-1 w-full" role="banner">
-                <div class="container flex items-center px-1 mx-auto">
-                    <a href="/">
-                        @include('_layouts.jim',['class'=>'in-header'])
-                        <span class="sr-only">jamescourtois.me</span>
-                    </a>
-                    <div id="vue-search" class="flex flex-1 justify-end items-center">
-                        <search></search>
+    <body class="relative pb-64">
+    
+        <header class="flex items-center justify-end py-1 w-full" role="banner">
+            <div class="container flex items-center px-1 mx-auto">
+                
+            <a class="{{ ($page->getPath() == '') ? 'opacity-0' : ''}}" href="/">
+                    @include('_layouts.jim',['class'=>'in-header'])
+                    <span class="sr-only">jamescourtois.me</span>
+                </a>
+                
+                <div id="vue-search" class="flex flex-1 justify-end items-center">
+                    <search></search>
 
-                        @include('_nav.menu')
+                    @include('_nav.menu')
 
-                        @include('_nav.menu-toggle')
-                    </div>
+                    @include('_nav.menu-toggle')
                 </div>
-            </header>       
-        
+            </div>
+        </header>       
+    
 
-            @include('_nav.menu-responsive')
-        @endif
+        @include('_nav.menu-responsive')
+    
 
         <main role="main" class="flex-auto w-full container mx-auto">
             @yield('body')
         </main>
 
-        <footer class="absolute w-full text-center bottom-0 z-50 text-xs py-1" role="contentinfo">
+        <footer class="absolute w-full text-center bottom-0 z-50 text-xs py-2" role="contentinfo">
             <ul class="flex flex-col m-0 md:flex-row justify-center list-none ">
                 <li class="md:mr-2">
                     &copy; James Courtois {{ date('Y') }}.

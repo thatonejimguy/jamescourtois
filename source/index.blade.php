@@ -4,7 +4,7 @@
 @section('body')
 
 
-<div class="w-full h-auto lg:min-h-600 lg:h-screen pb-16 flex flex-col items-center justify-center w-full">
+<div class="w-full h-auto lg:min-h-600 pb-24 flex flex-col items-center justify-center w-full">
     <div class="flex flex-col md:flex-row items-stretch justify-center relative w-full">
   
         @include('_layouts.jim',['class'=>'home-page'])
@@ -16,15 +16,14 @@
         </div>
     
     </div>
-    <div class="flex flex-col md:flex-row justify-center items-stretch pt-8 lg:pt-16 w-full">
-        <a href="#1" class="btn my-2 mx-auto md:mx-2 lg:mx-8 flex-1 w-full max-w-xs"><span>I make websites</span></a>
-        <a href="#2" class="btn my-2 mx-auto md:mx-2 lg:mx-8 flex-1 w-full max-w-xs"><span>I draw for fun</span></a>
-        <a href="#3" class="btn my-2 mx-auto md:mx-2 lg:mx-8 flex-1 w-full max-w-xs"><span>I am easy to reach</span></a>
-    </div>
 </div>
-<div class="w-full">
-    @foreach ($posts->where('categories',['websites'])->take(6)->chunk(2) as $row)
-    <div class="flex flex-col md:flex-row md:-mx-6">
+
+<hr class="border-black my-24 opacity-25">
+
+<div class="w-full flex flex-col md:flex-row">
+    <h2 class="flex-1">I make websites for a living.</h2>
+    @foreach ($websites->take(6)->chunk(3) as $row)
+    <div class="flex flex-1 flex-col md:flex-row md:-mx-6">
         @foreach ($row as $post)
             <div class="w-full md:w-1/2 md:mx-6">
                 @include('_components.post-preview-inline')
@@ -42,5 +41,37 @@
 @endforeach
 </div>
 
+<hr class="border-black my-24 opacity-25">
+
+<div class="w-full flex flex-col md:flex-row">
+    <h2 class="flex-1">I draw for fun.</h2>
+    @foreach ($artwork->take(6)->chunk(3) as $row)
+    <div class="flex flex-1 flex-col md:flex-row md:-mx-6">
+        @foreach ($row as $post)
+            <div class="w-full md:w-1/2 md:mx-6">
+                @include('_components.post-preview-inline')
+            </div>
+
+            @if (! $loop->last)
+                <hr class="block md:hidden w-full border-b mt-2 mb-6">
+            @endif
+        @endforeach
+    </div>
+
+    @if (! $loop->last)
+        <hr class="w-full border-b mt-2 mb-6">
+    @endif
+@endforeach
+</div>
+
+<hr class="border-black my-24 opacity-25">
+
+<div class="w-full flex flex-col md:flex-row">
+    <h2 class="flex-1">I'm easy to reach.</h2>
+    <div class="flex-1 flex flex-col justify-start items-start">
+        <p>Let's start a conversation.</p>
+        <a href="/contact" class="btn"><span>Get in Touch</span></a>
+    </div>
+</div>
 
 @stop
