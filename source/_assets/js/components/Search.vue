@@ -10,7 +10,7 @@
                 id="search"
                 v-model="query"
                 ref="search"
-                class="transition-fast relative block h-10 w-full lg:w-1/5 xl:w-1/6 pl-3 lg:focus:w-3/4 bg-transparent  border border-theme-light placeholder-theme-light focus:placeholder-white outline-none cursor-pointer text-gray-700 "
+                class="transition-fast relative block h-10 w-full lg:w-1/5 xl:w-1/6 pl-3 lg:focus:w-1/2 text-white bg-transparent  border border-theme-light placeholder-theme-light focus:placeholder-white outline-none cursor-pointer"
                 :class="{ 'transition-border': query }"
                 autocomplete="off"
                 name="search"
@@ -22,16 +22,16 @@
 
             <button
                 v-if="query || searching"
-                class="absolute top-0 right-0 leading-snug font-400 text-3xl text-blue-500 hover:text-blue-600 focus:outline-none pr-7 lg:pr-3"
+                class="absolute top-0 right-0 leading-snug font-400 text-3xl text-theme-light hover:text-white focus:outline-none pr-7 lg:pr-3"
                 @click="reset"
             >&times;</button>
 
             <transition name="fade">
-                <div v-if="query" class="absolute left-0 right-0 lg:inset-auto w-full lg:w-3/4 text-left mb-4 lg:mt-10">
-                    <div class="flex flex-col bg-white border border-b-0 border-t-0 border-blue-400 rounded-b-lg shadow-lg mx-4 lg:mx-0">
+                <div v-if="query" class="absolute left-0 right-0 lg:inset-auto w-full lg:w-1/2 text-left mb-4 lg:mt-10">
+                    <div class="flex flex-col bg-theme-dark border border-b-0 border-t-0 border-blue-400 rounded-b-lg shadow-lg mx-4 lg:mx-0">
                         <a
                             v-for="(result, index) in results"
-                            class="bg-white hover:bg-blue-100 border-b border-blue-400 text-xl cursor-pointer p-4"
+                            class="bg-theme-dark hover:bg-blue-100 border-b text-xl cursor-pointer p-4"
                             :class="{ 'rounded-b-lg' : (index === results.length - 1) }"
                             :href="result.link"
                             :title="result.title"
@@ -40,7 +40,7 @@
                         >
                             {{ result.title }}
 
-                            <span class="block font-normal text-gray-700 text-sm my-1" v-html="result.snippet"></span>
+                            <span class="block font-normal text-white text-sm my-1" v-html="result.snippet"></span>
                         </a>
 
                         <div

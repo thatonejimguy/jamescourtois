@@ -32,7 +32,7 @@ description: Get in touch with us
         <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback"></script>
 
         <form id="jimform" action="https://www.form-data.com/_functions/submit/9ay1vdav3uerkwj1pcoghl" method="POST">
-            <div class="flex min-w-full -mx-3 mb-4">
+            <div class="flex flex-col md:flex-row min-w-full -mx-3 mb-4">
                 <div class="px-3 flex-1">
                     <label for="contact-name" class="block mb-2 text-sm">What is Your Name?*</label>
                     <input id="contact-name" placeholder="Guy Fieri"  name="name" required="required" class="block w-full border shadow rounded-lg outline-none mb-2 px-4 py-3 text-gray-800">
@@ -46,7 +46,7 @@ description: Get in touch with us
             </div>
             <div class="w-full mb-4">
                 <label for="reason" class="block text-sm mb-2">What can I do for you?*</label>
-                <select class="block w-full border shadow rounded-lg outline-none mb-2 px-4 pt-4 pb-3 leading-loose text-gray-800" required="required" name="reason" id="reason">
+                <select class="block appearance-none w-full bg-gray-100 border shadow rounded-lg outline-none mb-2 px-4 pt-4 pb-3 leading-loose text-gray-800" required="required" name="reason" id="reason">
                     <option value="">Select Reason</option>
                     <option value="general">General Inquiry</option>
                     <option value="build">Build me a website</option>
@@ -65,7 +65,7 @@ description: Get in touch with us
                 class="block w-full border shadow rounded-lg outline-none appearance-none mb-2 px-4 py-3 text-gray-800"></textarea>
             </div>
             <div class="g-recaptcha mb-6" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>
-            <div class="flex w-full"><button type="submit" class="btn"><span>Submit</span></button></div>
+            <div class="flex w-full"><button type="submit" class="btn px-16"><span>Submit</span></button></div>
         </form>
         
     </div>

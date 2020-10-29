@@ -3,7 +3,7 @@
     @include face(215px);
 
     &.in-header {
-        @include face(100px);
+        @include face(60px);
     }
 
     &.home-page {
@@ -11,14 +11,10 @@
         @include face(185px); 
         
         @screen md {
-            @apply mx-8;
             @include face(215px);
         }
-        @screen lg {
-            @apply mr-0;
-        }
         @screen xl {
-            @include face(260px);
+            @include face(300px);
         }
     }
        
