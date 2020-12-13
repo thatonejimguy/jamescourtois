@@ -145,3 +145,20 @@ footer {
     @apply text-gray-400;
     background: rgba(0, 0, 0, 0.25)
 }
+
+.container {
+    @apply px-4 mx-auto;
+}
+
+.select-wrapper{
+    @apply relative;
+    &:after {
+        content: '';
+        @apply absolute block bg-transparent border-r border-b border-white;
+        transform:rotate(45deg);
+        width:10px;
+        height:10px;
+        top:37%;
+        right:1.5rem;
+    }
+}

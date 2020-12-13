@@ -3,22 +3,20 @@ title: Websites
 description: The websites
 pagination:
     collection: websites
-    perPage: 4
+    perPage: 99
 ---
 @extends('_layouts.master')
 
 @section('body')
     <h1>Websites</h1>
 
-    <hr class="border-b my-6">
+   
 
-    @foreach ($pagination->items as $post)
-        @include('_components.post-preview-inline')
-
-        @if ($post != $pagination->items->last())
-            <hr class="border-b my-6">
-        @endif
-    @endforeach
+    <div class="flex flex-wrap">
+        @foreach ($pagination->items as $project)
+            @include('_components.post-preview-inline')
+        @endforeach
+    </div>
 
     @if ($pagination->pages->count() > 1)
         <nav class="flex text-base my-8">

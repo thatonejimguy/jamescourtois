@@ -3,12 +3,7 @@
         class="ml-6 {{ $page->isActive('/websites') ? 'active text-theme-light' : '' }}">
         Websites
     </a>
-
-    <a title="{{ $page->siteName }} Artwork Archive" href="/artwork"
-        class="ml-6 {{ $page->isActive('/artwork') ? 'active text-theme-light' : '' }}">
-        Artwork
-    </a>
-
+    
     <a title="{{ $page->siteName }} Contact" href="/contact"
         class="ml-6 {{ $page->isActive('/contact') ? 'active text-theme-light' : '' }}">
         Contact

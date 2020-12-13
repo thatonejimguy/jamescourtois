@@ -27,10 +27,10 @@
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
     </head>
 
-    <body class="relative pb-64">
+    <body class="relative pb-24">
     
         <header class="flex items-center justify-end py-1 w-full" role="banner">
-            <div class="container flex items-center px-1 mx-auto">
+            <div class="container flex items-center">
                 
             <a class="{{ ($page->getPath() == '') ? 'opacity-0' : ''}}" href="/">
                     @include('_layouts.jim',['class'=>'in-header'])
@@ -52,7 +52,7 @@
         @include('_nav.menu-responsive')
     
 
-        <main role="main" class="flex-auto w-full container mx-auto">
+        <main role="main" class="flex-auto w-full container">
             @yield('body')
         </main>
 

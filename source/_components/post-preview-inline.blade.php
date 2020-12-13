@@ -1,20 +1,22 @@
-<div class="flex flex-col mb-4">
-    <p class="font-medium my-2">
-        {{ $post->getDate()->format('F j, Y') }}
-    </p>
+<div class="flex flex-wrap mb-4 w-full md:w-1/2 lg:w-1/3 px-2">
+    <a
+        href="{{ $project->getUrl() }}"
+        title="Read more - {{ $project->title }}"
+        class="flex flex-col w-full justify-start items-start"
+    >
+        <img class="block w-full" src="{{$project->cover_image}}" alt="{{$project->title}}">
 
-    <h2 class="text-3xl mt-0">
-        <a
-            href="{{ $post->getUrl() }}"
-            title="Read more - {{ $post->title }}"
-            class=""
-        >{{ $post->title }}</a>
-    </h2>
-    <div class="">
-        @foreach ($post->categories as $cat)
-    <a href="/blog/categories/{{$cat}}">{{$cat}}</a>
-        @endforeach
+        <h2>
+            {{ $project->title }}
+        </h2>
+    
+    </a>
+    <div class="flex w-full justify-start items-start">
+        @if($project->categories)
+            @foreach ($project->categories as $i => $category)
+                <span class="inline-block bg-gray-300 leading-loose text-theme-dark text-xs mr-4 p-2"
+                >{{ $category }}</span>
+            @endforeach
+        @endif
     </div>
-
-    <p class="mb-4 mt-0">{!! $post->getExcerpt(200) !!}</p>
 </div>

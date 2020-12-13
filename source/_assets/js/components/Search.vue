@@ -28,10 +28,10 @@
 
             <transition name="fade">
                 <div v-if="query" class="absolute left-0 right-0 lg:inset-auto w-full lg:w-1/2 text-left mb-4 lg:mt-10">
-                    <div class="flex flex-col bg-theme-dark border border-b-0 border-t-0 border-blue-400 rounded-b-lg shadow-lg mx-4 lg:mx-0">
+                    <div class="flex flex-col bg-gray-900 border border-b-0 border-t-0 border-theme-light rounded-b-lg shadow-lg mx-4 lg:mx-0">
                         <a
                             v-for="(result, index) in results"
-                            class="bg-theme-dark hover:bg-blue-100 border-b text-xl cursor-pointer p-4"
+                            class="bg-gray-900 text-xl cursor-pointer p-4"
                             :class="{ 'rounded-b-lg' : (index === results.length - 1) }"
                             :href="result.link"
                             :title="result.title"
@@ -40,12 +40,12 @@
                         >
                             {{ result.title }}
 
-                            <span class="block font-normal text-white text-sm my-1" v-html="result.snippet"></span>
+                            <span class="block font-normal text-theme-light opacity-50 text-xs my-1" v-html="result.snippet"></span>
                         </a>
 
                         <div
                             v-if="! results.length"
-                            class="bg-white w-full hover:bg-blue-100 border-b border-blue-400 rounded-b-lg shadow cursor-pointer p-4"
+                            class="w-full border-b border-theme-light rounded-b-lg shadow cursor-pointer p-4"
                         >
                             <p class="my-0">No results for <strong>{{ query }}</strong></p>
                         </div>
@@ -57,7 +57,7 @@
         <button
             title="Start searching"
             type="button"
-            class="flex lg:hidden bg-gray-100 hover:bg-blue-100 justify-center items-center border border-gray-500 rounded-full focus:outline-none h-10 px-3"
+            class="flex lg:hidden justify-center items-center rounded-full focus:outline-none h-10 px-3"
             @click.prevent="showInput"
         >
             <img src="/assets/img/magnifying-glass.svg" alt="search icon" class="h-4 w-4 max-w-none">

@@ -5,34 +5,15 @@ use Illuminate\Support\Str;
 return [
     'baseUrl' => '',
     'production' => false,
-    'siteName' => 'jamescourtois.me',
+    'siteName' => 'James Courtois Website',
     'siteDescription' => 'Cool guy',
     'siteAuthor' => 'James Courtois',
 
     // collections
     'collections' => [
-        'posts' => [
-            'author' => 'Author Name', // Default author, if not provided in a post
-            'sort' => '-date',
-            'path' => 'blog/{filename}',
-        ],
         'websites' => [
-            'author' => 'Author Name', // Default author, if not provided in a post
-            'sort' => '-date',
+            'sort' => 'order','title',
             'path' => 'websites/{filename}',
-        ],
-        'artwork' => [
-            'author' => 'Author Name', // Default author, if not provided in a post
-            'sort' => '-date',
-            'path' => 'artwork/{filename}',
-        ],
-        'categories' => [
-            'path' => '/blog/categories/{filename}',
-            'posts' => function ($page, $allPosts) {
-                return $allPosts->filter(function ($post) use ($page) {
-                    return $post->categories ? in_array($page->getFilename(), $post->categories, true) : false;
-                });
-            },
         ],
     ],
 

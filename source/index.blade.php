@@ -19,35 +19,15 @@
 </div>
 
 
-<div class="w-full flex flex-col md:flex-row">
-    <h2 class="flex-1">I make websites for a living.</h2>
-    @foreach ($websites->take(6)->chunk(3) as $row)
-    <div class="flex flex-1 flex-col md:flex-row md:-mx-6">
-        @foreach ($row as $post)
-            <div class="w-full md:w-1/2 md:mx-6">
-                @include('_components.post-preview-inline')
-            </div>
-        @endforeach
-    </div>
-@endforeach
+
+<div class="flex flex-wrap w-full">
+    @foreach ($websites->take(99)->chunk(99) as $row)
+            @foreach ($row as $project)
+                    @include('_components.post-preview-inline')
+            @endforeach    
+    @endforeach
 </div>
 
-<hr class="border-black my-0 lg:my-24 opacity-25">
-
-<div class="w-full flex flex-col md:flex-row">
-    <h2 class="flex-1">I draw for fun.</h2>
-    @foreach ($artwork->take(6)->chunk(3) as $row)
-    <div class="flex flex-1 flex-col md:flex-row md:-mx-6">
-        @foreach ($row as $post)
-            <div class="w-full md:w-1/2 md:mx-6">
-                @include('_components.post-preview-inline')
-            </div>
-        @endforeach
-    </div>
-@endforeach
-</div>
-
-<hr class="border-black my-0 lg:my-24 opacity-25">
 
 <div class="w-full flex flex-col md:flex-row">
     <h2 class="flex-1">I'm easy to reach.</h2>
