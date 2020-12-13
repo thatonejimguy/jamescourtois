@@ -3,7 +3,7 @@ extends: _layouts.project
 section: content
 title: musialawards.com
 url: https://musialawards.com
-order: 2
+order: 3
 description: Website build by James Courtois
 cover_image: /assets/img/musialawards.com.png
 featured: false

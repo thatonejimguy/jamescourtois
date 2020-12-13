@@ -12,7 +12,7 @@ return [
     // collections
     'collections' => [
         'websites' => [
-            'sort' => 'order','title',
+            'sort' => ['order','title'],
             'path' => 'websites/{filename}',
         ],
     ],
