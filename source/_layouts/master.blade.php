@@ -52,7 +52,7 @@
         @include('_nav.menu-responsive')
     
 
-        <main role="main" class="flex-auto w-full container">
+        <main role="main" class="flex-auto w-full container {{ ($page->getPath() == '') ? '' : 'pt-12'}}">
             @yield('body')
         </main>
 
