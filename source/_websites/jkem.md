@@ -7,7 +7,7 @@ url: https://jkem.com
 description: Website build by James Courtois
 cover_image: /assets/img/jkem.com.png
 featured: false
-categories: [wordpress, woocommerce]
+categories: [wordpress, woocommerce, sass, laravel blade, jquery, nodejs, composer]
 ---
 
 Drive

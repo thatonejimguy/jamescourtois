@@ -39,6 +39,13 @@ module.exports = {
         'theme-light' : '#13F0B2',
         'theme-dark' : '#105057',
       },
+      width:{
+        'full-plus-2' : 'calc(100% + 0.5rem)',
+        'full-plus-4' : 'calc(100% + 1rem)',
+        'full-plus-8' : 'calc(100% + 2rem)',
+        'full-plus-16' : 'calc(100% + 4rem)',
+        'full-plus-24' : 'calc(100% + 6rem)',
+      },
       maxWidth: {
         none: 'none',
         '7xl': '80rem',

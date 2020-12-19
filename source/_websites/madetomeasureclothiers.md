@@ -7,7 +7,7 @@ order: 17
 description: Website build by James Courtois
 cover_image: /assets/img/madetomeasureclothiers.com.png
 featured: false
-categories: [wordpress]
+categories: [wordpress, sass, laravel blade, jquery, nodejs, composer]
 ---
 
 Drive

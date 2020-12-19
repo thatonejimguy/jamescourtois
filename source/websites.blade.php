@@ -12,7 +12,7 @@ pagination:
 
    
 
-    <div class="flex flex-wrap">
+    <div class="flex flex-wrap w-full lg:w-full-plus-16 lg:-mx-8">
         @foreach ($pagination->items as $project)
             @include('_components.post-preview-inline')
         @endforeach

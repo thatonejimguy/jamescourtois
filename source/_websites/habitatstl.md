@@ -7,7 +7,7 @@ order: 14
 description: Website build by James Courtois
 cover_image: /assets/img/habitatstl.org.png
 featured: false
-categories: [wordpress]
+categories: [wordpress, sass, laravel blade, jquery, nodejs, composer]
 ---
 
 Drive

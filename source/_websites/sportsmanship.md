@@ -7,7 +7,7 @@ order: 9
 description: Website build by James Courtois
 cover_image: /assets/img/sportsmanship.org.png
 featured: false
-categories: [wordpress, custom navigation]
+categories: [wordpress, sass, laravel blade, jquery, nodejs, composer]
 ---
 
 Sports

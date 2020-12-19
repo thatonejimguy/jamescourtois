@@ -7,7 +7,7 @@ order: 2
 description: Website build by James Courtois
 cover_image: /assets/img/shop.truefitness.com.png
 featured: false
-categories: [wordpress, woocommerce]
+categories: [wordpress, woocommerce, sass, laravel blade, jquery, nodejs, composer]
 ---
 
 True

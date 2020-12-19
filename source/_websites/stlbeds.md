@@ -7,7 +7,7 @@ order: 14
 description: Website build by James Courtois
 cover_image: /assets/img/stlbeds.com.png
 featured: false
-categories: [wordpress, custom navigation]
+categories: [wordpress, sass, laravel blade, jquery, nodejs, composer]
 ---
 
 Beds

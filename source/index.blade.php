@@ -20,8 +20,8 @@
 
 
 
-<div class="flex flex-wrap w-full">
-    @foreach ($websites->take(99)->chunk(99) as $row)
+<div class="flex flex-wrap w-full lg:w-full-plus-16 lg:-mx-8">
+    @foreach ($websites->where('featured',true)->take(4)->chunk(2) as $row)
             @foreach ($row as $project)
                     @include('_components.post-preview-inline')
             @endforeach    

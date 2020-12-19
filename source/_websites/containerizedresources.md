@@ -6,7 +6,7 @@ order: 4
 description: A website build by James Courtois
 url: https://containerizedresources.com
 cover_image: /assets/img/containerizedresources.com.png
-featured: false
+featured: true
 categories: [wordpress, css animation]
 ---
 
