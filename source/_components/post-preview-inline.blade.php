@@ -2,15 +2,15 @@
     <a
         href="{{ $project->getUrl() }}"
         title="Read more - {{ $project->title }}"
-        class="flex flex-col w-full justify-start items-start"
+        class="flex flex-col w-full justify-start items-start  no-underline"
     >
-        <div class="relative border-2 border-white flex flex-col items-center justify-center">
+        <span class="relative border-2 border-white flex flex-col items-center justify-center hover:border-theme-light transition">
             <img class="block w-full" src="{{$project->cover_image}}" alt="{{$project->title}}">
-            <div class="overlay"></div>
-            <div class="hidden text-theme-light rounded-full border border-theme-light  p-1 px-3 z-30 absolute bottom-0">View Details</div>
-        </div>
+            <span class="block overlay"></span>
+            <span class="inline-flex text-theme-light rounded-full border border-theme-light  p-1 px-3 z-30 absolute bottom-0">View Details</span>
+        </span>
 
-        <h2>
+        <h2 class="underline-animation">
             {{ $project->title }}
         </h2>
     

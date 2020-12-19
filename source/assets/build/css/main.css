@@ -740,27 +740,6 @@ body {
   font-size: 16px;
 }
 
-a {
-  --text-opacity: 1;
-  color: #13F0B2;
-  color: rgba(19, 240, 178, var(--text-opacity));
-  text-decoration: none;
-  transition: 200ms ease-out;
-}
-
-a:hover {
-  --text-opacity: 1;
-  color: #13F0B2;
-  color: rgba(19, 240, 178, var(--text-opacity));
-  text-decoration: underline;
-}
-
-a:visited {
-  --text-opacity: 1;
-  color: #13F0B2;
-  color: rgba(19, 240, 178, var(--text-opacity));
-}
-
 blockquote {
   --border-opacity: 1;
   border-color: #63b3ed;
@@ -1926,6 +1905,44 @@ a.btn:visited:hover:after {
   background-color: rgba(16, 80, 87, var(--bg-opacity));
   z-index: 20;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 65%, white 95%);
+}
+
+a:not(.no-underline):not(.btn),
+.underline-animation {
+  --text-opacity: 1;
+  color: #13F0B2;
+  color: rgba(19, 240, 178, var(--text-opacity));
+  text-decoration: none;
+  line-height: 1.25;
+  border-bottom-width: 1px;
+  border-color: transparent;
+  transition: all 400ms ease-out;
+}
+
+a:not(.no-underline):not(.btn):hover,
+.underline-animation:hover {
+  --text-opacity: 1;
+  color: #13F0B2;
+  color: rgba(19, 240, 178, var(--text-opacity));
+  --border-opacity: 1;
+  border-color: #13F0B2;
+  border-color: rgba(19, 240, 178, var(--border-opacity));
+}
+
+a:not(.no-underline):not(.btn):visited,
+.underline-animation:visited {
+  --text-opacity: 1;
+  color: #13F0B2;
+  color: rgba(19, 240, 178, var(--text-opacity));
+}
+
+*:hover > .underline-animation {
+  --text-opacity: 1;
+  color: #13F0B2;
+  color: rgba(19, 240, 178, var(--text-opacity));
+  --border-opacity: 1;
+  border-color: #13F0B2;
+  border-color: rgba(19, 240, 178, var(--border-opacity));
 }
 
 .space-y-0 > :not(template) ~ :not(template){
@@ -23999,7 +24016,7 @@ a.btn:visited:hover:after {
 }
 
 .transition{
-  transition: all .5s ease-out;
+  transition: all .4s ease-out;
 }
 
 @media (min-width: 640px){

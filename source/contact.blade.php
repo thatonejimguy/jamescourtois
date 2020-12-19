@@ -51,8 +51,9 @@ description: Get in touch with us
                         <option value="">Make a selection</option>
                         <option value="general">General Inquiry</option>
                         <option value="build">Build me a website</option>
-                        <option value="draw">Draw me something</option>
-                        <option value="draw">Teach me something</option>
+                        <option value="draw">My website is broken</option>
+                        <option value="draw">This website is broken</option>
+                        <option value="draw">Teach me how to build websites</option>
                         <option value="work">Work for me</option>
                         <option value="dad">Can I pet your dog</option>
                         <option value="dad">I'm your real dad</option>

@@ -87,7 +87,7 @@ module.exports = {
           transition: 'all .2s ease-out',
         },
         '.transition': {
-          transition: 'all .5s ease-out',
+          transition: 'all .4s ease-out',
         },
       }
       addUtilities(newUtilities)

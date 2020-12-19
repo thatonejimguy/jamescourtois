@@ -32,7 +32,7 @@
         <header class="flex items-center justify-end py-1 w-full" role="banner">
             <div class="container flex items-center">
                 
-            <a class="{{ ($page->getPath() == '') ? 'opacity-0' : ''}}" href="/">
+            <a class="no-underline {{ ($page->getPath() == '') ? 'opacity-0' : ''}}" href="/">
                     @include('_layouts.jim',['class'=>'in-header'])
                     <span class="sr-only">jamescourtois.me</span>
                 </a>
