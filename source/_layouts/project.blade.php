@@ -40,4 +40,6 @@
             @endif
         </div>
     </nav>
+
+    @include('_layouts.cta')
 @endsection

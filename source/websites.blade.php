@@ -45,4 +45,6 @@ pagination:
             @endif
         </nav>
     @endif
+
+    @include('_layouts.cta')
 @stop

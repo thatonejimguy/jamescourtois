@@ -934,6 +934,26 @@ footer {
   right: 1.5rem;
 }
 
+.slide-up {
+  margin-bottom: -5rem;
+  transition: 300ms ease-out;
+}
+
+.slide-up-wrap {
+  transition: 300ms ease-out;
+  overflow: hidden;
+}
+
+.slide-up-wrap:active .slide-up {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .slide-up-wrap:hover .slide-up {
+    margin-bottom: 1rem;
+  }
+}
+
 .nav-menu {
   --bg-opacity: 1;
   background-color: #edf2f7;

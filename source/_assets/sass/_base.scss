@@ -149,3 +149,29 @@ footer {
         right:1.5rem;
     }
 }
+
+.slide-up {
+    margin-bottom: -5rem;
+    transition: 300ms ease-out;
+}
+
+.slide-up-wrap {
+    transition: 300ms ease-out;
+    overflow: hidden;
+    &:active {
+        .slide-up {
+            margin-bottom:1rem;
+        }
+    }
+    @screen lg {
+        &:hover {
+            .slide-up {
+                margin-bottom:1rem;
+            }
+        }
+    }
+}
+
+
+
+
