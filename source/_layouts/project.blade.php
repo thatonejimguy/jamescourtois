@@ -9,11 +9,19 @@
         <img src="{{ $page->cover_image }}" alt="{{ $page->title }} cover image" class="mb-2">
     @endif
 
-    <h1 class="leading-none mb-2">{{ $page->title }}</h1>
+    <div class="flex items-center justify-start">
+        <h1 class="leading-none mb-2">{{ $page->title }}</h1>
+    
+        @include('_layouts.btn',
+        [
+            'url' => $page->url,
+            'text' => 'View Live Site'
+        ])
+    </div>
 
     @if($page->categories)
         @foreach ($page->categories as $i => $category)
-            <span class="inline-block bg-gray-300 hover:bg-blue-200 leading-loose tracking-wide text-gray-800 uppercase text-xs font-semibold rounded mr-4 px-3 pt-px"
+            <span class="inline-block border border-gray-500 leading-loose tracking-wide text-gray-500 uppercase text-xs font-semibold rounded mr-4 px-3 pt-px"
             >{{ $category }}</span>
         @endforeach
     @endif

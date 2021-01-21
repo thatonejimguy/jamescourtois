@@ -7,7 +7,7 @@
         <span class="slide-up-wrap relative border-2 border-white flex flex-col items-center justify-center hover:border-theme-light transition">
             <img class="block w-full" src="{{$project->cover_image}}" alt="{{$project->title}} Home Page Screenshot">
             <span class="block overlay"></span>
-            <span class="slide-up inline-flex bg-theme-light text-white rounded-full border border-theme-light  p-1 px-3 z-30 absolute bottom-0">View Details</span>
+            <span class="slide-up inline-flex bg-white text-theme-light rounded-full border border-theme-light  p-1 px-3 z-30 absolute bottom-0">View Details</span>
         </span>
 
         <h2 class="underline-animation my-2 text-2xl lg:text-3xl">
