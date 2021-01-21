@@ -34,13 +34,13 @@ description: Get in touch with us
         <form id="jimform" action="https://api.form-data.com/f/xxunkl9ky5eslugaxr3qcb" method="POST">
             <div class="flex flex-col md:flex-row min-w-full -mx-3 mb-4">
                 <div class="px-3 flex-1">
-                    <label for="contact-name" class="block mb-2 text-sm">What is Your Name?*</label>
-                    <input id="contact-name" placeholder="Guy Fieri"  name="name" required="required" class="block w-full shadow rounded-lg outline-none mb-2 px-4 py-3 bg-gray-900 text-gray-100">
+                    <label for="name" class="block mb-2 text-sm">What is Your Name?*</label>
+                    <input id="name" placeholder="Guy Fieri"  name="name" required="required" class="block w-full shadow rounded-lg outline-none mb-2 px-4 py-3 bg-gray-900 text-gray-100">
                 </div>
             
                 <div class="px-3 flex-1">
-                    <label for="contact-email" class="block text-sm mb-2">What is your email address?*</label>
-                    <input type="email" id="contact-email" placeholder="welcome@flavortown.com" name="email" required="required" class="block w-full shadow rounded-lg outline-none mb-2 px-4 py-3 bg-gray-900 text-gray-100">
+                    <label for="email" class="block text-sm mb-2">What is your email address?*</label>
+                    <input type="email" id="email" placeholder="welcome@flavortown.com" name="email" required="required" class="block w-full shadow rounded-lg outline-none mb-2 px-4 py-3 bg-gray-900 text-gray-100">
                 </div>
         
             </div>
@@ -62,8 +62,8 @@ description: Get in touch with us
             </div>
         
         
-            <div class="w-full mb-6"><label for="contact-message"
-                class="block text-sm mb-2">Can you give me some details?*</label><textarea id="contact-message" rows="4"
+            <div class="w-full mb-6"><label for="message"
+                class="block text-sm mb-2">Can you give me some details?*</label><textarea id="message" rows="4"
                 name="message" placeholder="Spill the beans." required="required"
                 class="block bg-gray-900 w-full shadow rounded-lg outline-none appearance-none mb-2 px-4 py-3 text-gray-100"></textarea>
             </div>

@@ -1,4 +1,4 @@
-<div class="jim {{ $class ?? '' }}">
+<div class="jim {{ $class ?? '' }}" title="I drew and animated my face using html and css.">
 
     <div class="hair">
         <div class="top">
