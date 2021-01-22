@@ -18,7 +18,7 @@
     <div class="flex flex-wrap w-full-plus-2 justify-start items-start">
         @if($project->categories)
             @foreach ($project->categories as $i => $category)
-                <span class="inline-flex text-xs rounded text-gray-400"
+                <span class="inline-flex text-xs text-gray-400"
                 >{{ $category }}{!! $loop->last ? '' : '&comma;&nbsp;'!!}</span>
             @endforeach
         @endif

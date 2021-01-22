@@ -30,7 +30,7 @@
     <body class="relative pb-24">
     
         <header class="flex items-center justify-end py-1 w-full" role="banner">
-            <div class="container flex items-center">
+            <div class="padded w-full flex items-center">
                 
             <a class="no-underline {{ ($page->getPath() == '') ? 'opacity-0' : ''}}" href="/">
                     @include('_layouts.jim',['class'=>'in-header'])
@@ -52,7 +52,7 @@
         @include('_nav.menu-responsive')
     
 
-        <main role="main" class="flex-auto w-full container {{ ($page->getPath() == '') ? '' : 'pt-12'}}">
+        <main role="main" class="flex-auto w-full {{ ($page->getPath() == '') ? '' : 'pt-12'}}">
             @yield('body')
         </main>
 

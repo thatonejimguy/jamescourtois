@@ -8,7 +8,7 @@ blockquote {
     @apply .border-l-4;
     @apply .font-normal;
     @apply .italic;
-    @apply .my-8;
+    @apply my-8;
     @apply .pl-6;
     @apply .text-lg;
 }
@@ -39,7 +39,7 @@ h3,
 h4,
 h5,
 h6 {
-    @apply leading-tight mb-4 mt-8;
+    @apply leading-tight mb-4;
 }
 
 h1 {
@@ -71,10 +71,7 @@ h6 {
 }
 
 hr {
-    @apply .border-b;
-    @apply .border-blue-200;
-    @apply .my-12;
-    @apply .rounded-full;
+    @apply border-b border-blue-200 my-12 rounded-full;
 }
 
 li {
@@ -87,7 +84,7 @@ li {
 
 ol,
 ul {
-    @apply .my-4;
+    @apply mb-4;
 }
 
 ol {
@@ -99,11 +96,7 @@ ul {
 }
 
 p {
-    @apply .my-3;
-
-    @screen md {
-        @apply .my-6;
-    }
+    @apply mb-4;
 }
 
 pre {
@@ -172,6 +165,15 @@ footer {
     }
 }
 
+.padded {
+    @apply px-4;
+    @screen md {
+        @apply px-8;
+    }
+    @screen lg {
+        @apply px-16;
+    }
+}
 
 
 

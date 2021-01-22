@@ -1,1 +1,1 @@
-<a href="{!! $url !!}" class="btn"><span>{!! $text !!}</span></a>
+<a href="{!! $url !!}" class="btn {!! $class ? $class : '' !!}"><span>{!! $text !!}</span></a>

@@ -785,7 +785,6 @@ h5,
 h6 {
   line-height: 1.25;
   margin-bottom: 1rem;
-  margin-top: 2rem;
 }
 
 h1 {
@@ -837,7 +836,6 @@ li ol {
 
 ol,
 ul {
-  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -850,15 +848,7 @@ ul {
 }
 
 p {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
-}
-
-@media (min-width: 768px) {
-  p {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
+  margin-bottom: 1rem;
 }
 
 pre {
@@ -951,6 +941,25 @@ footer {
 @media (min-width: 1024px) {
   .slide-up-wrap:hover .slide-up {
     margin-bottom: 1rem;
+  }
+}
+
+.padded {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .padded {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .padded {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 }
 
