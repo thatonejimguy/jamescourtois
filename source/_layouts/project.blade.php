@@ -28,7 +28,7 @@
         </div>
     
         @if ($page->cover_image)
-            <img src="{{ $page->cover_image }}" alt="{{ $page->title }} cover image self-end" class="mb-2">
+            <a class="no-underline" href="{{ $page->url }}"><img src="{{ $page->cover_image }}" alt="{{ $page->title }} cover image self-end" class="mb-2"></a>
         @endif
     </div>
 

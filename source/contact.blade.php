@@ -6,13 +6,12 @@ description: Get in touch with us
 
 @section('body')
 
-<div class="flex flex-col lg:flex-row">
+<div class="padded flex flex-col lg:flex-row">
 
     <div class="flex-1">
         <h1>Let's start a conversation</h1>
         <p class="mb-8">
-            Fill this form with formative information and a formal email will be formed and forwarded to me for a formulated
-            response within the fortnight.
+            Fill out this form and tell what kind of web related needs you have. I will reply to you via email within 24 hours. This form is powered by <a target="_blank" href="http://form-data.com">form-data.com</a> (which is a great service you should check out) and the log is deleted after 90 days.
         </p>
 
         <script>
@@ -47,7 +46,7 @@ description: Get in touch with us
             <div class="w-full mb-4">
                 <label for="reason" class="block text-sm mb-2">What can I do for you?*</label>
                 <div class="select-wrapper">
-                    <select class="block appearance-none w-full bg-gray-900 shadow rounded-lg outline-none mb-2 px-4 py-3 leading-loose text-gray-100" required="required" name="reason" id="reason">
+                    <select class="block appearance-none font-sans w-full bg-gray-900 shadow rounded-lg outline-none mb-2 px-4 py-3 leading-loose text-gray-100" required="required" name="reason" id="reason">
                         <option value="">Make a selection</option>
                         <option value="build">Build me a website</option>
                         <option value="draw">My website is broken</option>
@@ -64,7 +63,7 @@ description: Get in touch with us
         
             <div class="w-full mb-6"><label for="message"
                 class="block text-sm mb-2">Can you give me some details?*</label><textarea id="message" rows="4"
-                name="message" placeholder="Spill the beans." required="required"
+                name="message" placeholder="Tweet the deets" required="required"
                 class="block bg-gray-900 w-full shadow rounded-lg outline-none appearance-none mb-2 px-4 py-3 text-gray-100"></textarea>
             </div>
             <div class="sr-only">

@@ -8,18 +8,20 @@ pagination:
 @extends('_layouts.master')
 
 @section('body')
-    <h1>Websites</h1>
+    <div class="padded">
+        <h1>Websites</h1>
+    </div>
 
    
 
-    <div class="flex flex-wrap w-full lg:w-full-plus-16 lg:-mx-8">
+    <div class="padded flex flex-wrap w-full lg:w-full-plus-16 lg:-mx-8">
         @foreach ($pagination->items as $project)
             @include('_components.post-preview-inline')
         @endforeach
     </div>
 
     @if ($pagination->pages->count() > 1)
-        <nav class="flex text-base my-8">
+        <nav class="pasdded flex text-base my-8">
             @if ($previous = $pagination->previous)
                 <a
                     href="{{ $previous }}"
