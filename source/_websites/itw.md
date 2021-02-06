@@ -10,4 +10,4 @@ featured: true
 categories: [wordpress, woocommerce, sass, laravel blade, jquery, nodejs, composer]
 ---
 
-ITW
+THe ITW family of websites are custom wordpress builds that feature a flexible module-based page builder on the back end. There are hover-based css animations as well as looping animates in the background of certain modules. About 100% of the front end of this website code I wrote. It is based on a laravel and node powered base theme proprietary to Matchbox Design Group.

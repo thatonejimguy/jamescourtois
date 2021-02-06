@@ -10,3 +10,4 @@ featured: false
 categories: [wordpress, woocommerce]
 ---
 
+Natural Hope Herbals is a custom wordpress and woocommerce build based on designs provided by Anda Creative.

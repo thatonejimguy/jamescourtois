@@ -1,4 +1,4 @@
-<div class="flex flex-col slide-up-wrap relative items-start justify-start mb-4 w-full md:w-1/2 xl:w-1/3 px-4 lg:px-8 mb-16 lg:mb-16">
+<div class="flex flex-col slide-up-wrap relative items-start justify-start mb-4 w-full md:w-1/2 lg:w-1/3 px-4 lg:px-8 mb-16 lg:mb-16">
     <a
         href="{{ $project->getUrl() }}"
         title="View details - {{ $project->title }}"

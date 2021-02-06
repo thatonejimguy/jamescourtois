@@ -6,7 +6,7 @@
 
 @section('body')
     <div class="padded flex flex-col lg:flex-row w-full justify-between">
-        <div class="mb-12 pr-16">
+        <div class="mb-12 pr-16 flex-1">
             <h1 class="leading-none m-0 mb-4">{{ $page->title }}</h1>
     
             @include('_layouts.btn',
@@ -28,7 +28,7 @@
         </div>
     
         @if ($page->cover_image)
-            <a class="no-underline" href="{{ $page->url }}"><img src="{{ $page->cover_image }}" alt="{{ $page->title }} cover image self-end" class="mb-2"></a>
+            <a class="no-underline flex-1" target="_blank" href="{{ $page->url }}"><img src="{{ $page->cover_image }}" alt="{{ $page->title }} cover image self-end" class="mb-2"></a>
         @endif
     </div>
 

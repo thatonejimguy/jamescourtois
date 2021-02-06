@@ -10,4 +10,4 @@ featured: true
 categories: [wordpress, video header, woocommerce, sass, laravel blade, jquery, nodejs, composer]
 ---
 
-Stan Musial himself kissed me on the lips
+Musial Awards is a custom wordpress and woocommerce build that features a video header front page and a flexible module-based page builder on the back end. 100% of the front end of this website code I wrote. It is based on a laravel and node powered base theme proprietary to Matchbox Design Group.
