@@ -5,10 +5,10 @@
 @endphp
 
 @section('body')
-    <div class="padded py-16 flex flex-col lg:flex-row w-full justify-between">
+    <div class="padded py-16 flex flex-col xl:flex-row w-full justify-between">
         <div class="mb-12 pr-16 flex-1">
-            <div class="flex flex-col lg:flex-row">
-                <h1 class="leading-none m-0 mb-4 lg:mr-8">{{ $page->title }}</h1>
+            <div class="flex flex-col xl:flex-row items-start justify-start">
+                <h1 class="leading-none m-0 mb-4 xl:mr-8">{{ $page->title }}</h1>
         
                 @include('_layouts.btn',
                 [
