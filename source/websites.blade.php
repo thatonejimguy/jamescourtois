@@ -20,10 +20,12 @@ pagination:
 
    
 
-    <div class="padded flex flex-wrap w-full">
-        @foreach ($pagination->items as $project)
-            @include('_components.post-preview-inline')
-        @endforeach
+    <div class="padded w-full">
+        <div class="w-full-plus-16 -mx-8 flex flex-wrap">
+            @foreach ($pagination->items as $project)
+                @include('_components.post-preview-inline')
+            @endforeach
+        </div>
     </div>
 
     @if ($pagination->pages->count() > 1)
