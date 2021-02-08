@@ -19,7 +19,7 @@
 </div>
 
 
-<div class="padded flex flex-wrap w-full lg:w-full-plus-16 lg:-mx-8">
+<div class="padded flex flex-wrap w-full">
     @foreach ($websites->where('featured',true)->take(3)->chunk(1) as $row)
             @foreach ($row as $project)
                     @include('_components.post-preview-inline')

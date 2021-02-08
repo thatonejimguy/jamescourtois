@@ -12173,7 +12173,19 @@ a:not(.no-underline):not(.btn):visited,
 }
 
 .flex-1{
-  flex: 1 1 0%;
+  flex: 1;
+}
+
+.flex-2{
+  flex: 2;
+}
+
+.flex-3{
+  flex: 3;
+}
+
+.flex-4{
+  flex: 4;
 }
 
 .flex-auto{
@@ -34284,7 +34296,19 @@ a:not(.no-underline):not(.btn):visited,
   }
 
   .sm\:flex-1{
-    flex: 1 1 0%;
+    flex: 1;
+  }
+
+  .sm\:flex-2{
+    flex: 2;
+  }
+
+  .sm\:flex-3{
+    flex: 3;
+  }
+
+  .sm\:flex-4{
+    flex: 4;
   }
 
   .sm\:flex-auto{
@@ -56322,7 +56346,19 @@ a:not(.no-underline):not(.btn):visited,
   }
 
   .md\:flex-1{
-    flex: 1 1 0%;
+    flex: 1;
+  }
+
+  .md\:flex-2{
+    flex: 2;
+  }
+
+  .md\:flex-3{
+    flex: 3;
+  }
+
+  .md\:flex-4{
+    flex: 4;
   }
 
   .md\:flex-auto{
@@ -78360,7 +78396,19 @@ a:not(.no-underline):not(.btn):visited,
   }
 
   .lg\:flex-1{
-    flex: 1 1 0%;
+    flex: 1;
+  }
+
+  .lg\:flex-2{
+    flex: 2;
+  }
+
+  .lg\:flex-3{
+    flex: 3;
+  }
+
+  .lg\:flex-4{
+    flex: 4;
   }
 
   .lg\:flex-auto{
@@ -100398,7 +100446,19 @@ a:not(.no-underline):not(.btn):visited,
   }
 
   .xl\:flex-1{
-    flex: 1 1 0%;
+    flex: 1;
+  }
+
+  .xl\:flex-2{
+    flex: 2;
+  }
+
+  .xl\:flex-3{
+    flex: 3;
+  }
+
+  .xl\:flex-4{
+    flex: 4;
   }
 
   .xl\:flex-auto{
