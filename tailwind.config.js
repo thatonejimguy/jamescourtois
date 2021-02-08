@@ -39,6 +39,10 @@ module.exports = {
         'theme-light' : '#13F0B2',
         'theme-dark' : '#105057',
       },
+      fill:{
+        'theme-light' : '#13F0B2',
+        'theme-dark' : '#105057',
+      },
       width:{
         'full-plus-2' : 'calc(100% + 0.5rem)',
         'full-plus-4' : 'calc(100% + 1rem)',

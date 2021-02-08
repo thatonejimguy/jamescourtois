@@ -10,4 +10,4 @@ featured: false
 categories: [wordpress]
 ---
 
-Drive
+Dryclone Internatioanl is a custom wordpress build based on a design provided by Anda Creative. 

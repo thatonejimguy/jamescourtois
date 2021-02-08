@@ -5,7 +5,9 @@
         @include('_layouts.btn',
         [
             'url' => '/contact',
-            'text' => 'Contact Me'
+            'text' => 'Contact Me',
+            'class' => False,
+            'icon' => False,
         ])
     </div>
 </div>

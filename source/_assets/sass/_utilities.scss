@@ -19,7 +19,7 @@
 .btn,
 a.btn,
 a.btn:visited {
-    @apply text-theme-light  text-center font-normal no-underline overflow-hidden rounded-full px-4 py-2 z-20 relative inline-block border border-theme-light bg-transparent;
+    @apply text-theme-light  text-center font-normal no-underline overflow-hidden rounded-full px-4 py-2 z-20 relative inline-flex border border-theme-light bg-transparent;
     @include transition;
     &:after {
         content: '';
@@ -28,16 +28,29 @@ a.btn:visited {
         top:100%;
     }
     > * {
-        @apply relative z-20;
+        @apply relative z-20 ;
     }
+    svg {
+        @apply inline-block m-0 ml-2 mt-1 fill-theme-light ;
+        width: 15px;
+        height: 15px;
+        transition: all .2s ease-out;
+    }
+
     &:active,
     &:hover {
         @apply text-theme-dark no-underline;
+        svg {
+            @apply fill-theme-dark;
+            
+        }
     }
     &:active:after,
     &:hover:after {
         top:0;
     }
+
+    
 }
 
 .overlay {

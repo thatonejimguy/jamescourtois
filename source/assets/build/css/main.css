@@ -1867,7 +1867,7 @@ a.btn:visited {
   padding-bottom: 0.5rem;
   z-index: 20;
   position: relative;
-  display: inline-block;
+  display: inline-flex;
   border-width: 1px;
   --border-opacity: 1;
   border-color: #13F0B2;
@@ -1901,6 +1901,19 @@ a.btn:visited > * {
   z-index: 20;
 }
 
+.btn svg,
+a.btn svg,
+a.btn:visited svg {
+  display: inline-block;
+  margin: 0;
+  margin-left: 0.5rem;
+  margin-top: 0.25rem;
+  fill: #13F0B2;
+  width: 15px;
+  height: 15px;
+  transition: all 0.2s ease-out;
+}
+
 .btn:active, .btn:hover,
 a.btn:active,
 a.btn:hover,
@@ -1910,6 +1923,14 @@ a.btn:visited:hover {
   color: #105057;
   color: rgba(16, 80, 87, var(--text-opacity));
   text-decoration: none;
+}
+
+.btn:active svg, .btn:hover svg,
+a.btn:active svg,
+a.btn:hover svg,
+a.btn:visited:active svg,
+a.btn:visited:hover svg {
+  fill: #105057;
 }
 
 .btn:active:after, .btn:hover:after,
@@ -18625,6 +18646,14 @@ a:not(.no-underline):not(.btn):visited,
 
 .fill-current{
   fill: currentColor;
+}
+
+.fill-theme-light{
+  fill: #13F0B2;
+}
+
+.fill-theme-dark{
+  fill: #105057;
 }
 
 .stroke-current{
@@ -40730,6 +40759,14 @@ a:not(.no-underline):not(.btn):visited,
     fill: currentColor;
   }
 
+  .sm\:fill-theme-light{
+    fill: #13F0B2;
+  }
+
+  .sm\:fill-theme-dark{
+    fill: #105057;
+  }
+
   .sm\:stroke-current{
     stroke: currentColor;
   }
@@ -62758,6 +62795,14 @@ a:not(.no-underline):not(.btn):visited,
 
   .md\:fill-current{
     fill: currentColor;
+  }
+
+  .md\:fill-theme-light{
+    fill: #13F0B2;
+  }
+
+  .md\:fill-theme-dark{
+    fill: #105057;
   }
 
   .md\:stroke-current{
@@ -84790,6 +84835,14 @@ a:not(.no-underline):not(.btn):visited,
     fill: currentColor;
   }
 
+  .lg\:fill-theme-light{
+    fill: #13F0B2;
+  }
+
+  .lg\:fill-theme-dark{
+    fill: #105057;
+  }
+
   .lg\:stroke-current{
     stroke: currentColor;
   }
@@ -106818,6 +106871,14 @@ a:not(.no-underline):not(.btn):visited,
 
   .xl\:fill-current{
     fill: currentColor;
+  }
+
+  .xl\:fill-theme-light{
+    fill: #13F0B2;
+  }
+
+  .xl\:fill-theme-dark{
+    fill: #105057;
   }
 
   .xl\:stroke-current{
